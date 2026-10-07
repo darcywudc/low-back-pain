@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f3f6f7">
+<title>为什么腰总是酸？骨盆前倾与腰痛链条 · 互动图解</title>
+<style>
+:root{
+  --bg:#f3f6f7; --card:#ffffff; --ink:#1f2b31; --muted:#5f6d75; --line:#e2e8eb;
+  --accent:#1f9d8b; --accent-d:#147a6c; --accent-l:#e4f4f1;
+  --amber:#e08a1e; --amber-l:#fdf2e2; --pain:#e5484d; --pain-l:#fdeeee;
+  --shadow:0 1px 2px rgba(18,38,48,.05),0 10px 28px rgba(18,38,48,.08);
+  --r:20px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC","WenQuanYi Micro Hei",sans-serif;
+  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 max(18px,env(safe-area-inset-right)) 0 max(18px,env(safe-area-inset-left))}
+h1,h2,h3{line-height:1.35;margin:0}
+p{margin:0}
+button{font:inherit;color:inherit}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--accent-d);padding:10px 16px;border-radius:0 0 12px 0;font-weight:700;z-index:100}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid rgba(20,122,108,.55);outline-offset:2px}
+main:focus{outline:none}
+.noscript{background:var(--amber-l);border:1px solid #f4d6a8;color:#6b4508;padding:12px 16px;border-radius:12px;margin:14px 0}
+.hero .btn{margin-top:14px;min-height:40px;font-size:14px}
+.btn[aria-pressed="true"]{background:var(--accent-l);border-color:var(--accent);color:var(--accent-d)}
+.hero{padding:44px 0 26px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--accent-d);background:var(--accent-l);padding:4px 12px;border-radius:999px;letter-spacing:.04em}
+.hero h1{font-size:clamp(26px,4.4vw,40px);margin-top:14px;letter-spacing:.01em}
+.hero .sub{color:var(--muted);margin-top:10px;font-size:clamp(15px,2vw,18px);max-width:760px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.toc a{font-size:14px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;box-shadow:0 1px 2px rgba(0,0,0,.03);transition:border-color .2s,color .2s}
+.toc a:hover{border-color:var(--accent);color:var(--accent-d)}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);padding:26px;margin:0 0 26px}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.sec-no{font-size:13px;font-weight:700;color:#fff;background:var(--accent-d);border-radius:8px;padding:2px 9px}
+.sec-head h2{font-size:clamp(20px,2.6vw,26px)}
+.lead{color:var(--muted);margin:4px 0 18px}
+svg.fig{display:block;width:100%;height:auto;touch-action:manipulation;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+.fig text{font-family:inherit}
+.fig [data-tip]{cursor:pointer}
+.fig .hov{filter:drop-shadow(0 0 2.5px rgba(31,157,139,.95)) drop-shadow(0 0 6px rgba(31,157,139,.55))}
+.fig .np{pointer-events:none}
+.fig .ltxt{font-size:16px;font-weight:700;fill:#2b373d;paint-order:stroke;stroke:rgba(255,255,255,.9);stroke-width:3px;stroke-linejoin:round}
+.fig .stxt{font-size:12px;font-weight:700;fill:#5f6d75;letter-spacing:.06em}
+.fig .ptxt{font-size:12px;font-weight:600;fill:#fff}
+.fig .leader{stroke:#8b989f;stroke-width:1.2;fill:none;stroke-dasharray:3 3}
+.fig .ldot{fill:#fff;stroke:#5f6d75;stroke-width:1.6}
+.fig .dir{font-size:14px;font-weight:700;fill:#66757d;letter-spacing:.05em}
+.fig .vtxt{font-size:10px;font-weight:700;fill:#6e5f46}
+.flow{stroke-dasharray:9 6;animation:dashflow .7s linear infinite}
+@keyframes dashflow{to{stroke-dashoffset:-15}}
+.chain-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}
+.stage{background:linear-gradient(180deg,#fafcfc,#f2f6f7);border:1px solid var(--line);border-radius:16px;padding:8px;position:relative}
+.stage svg.fig{max-height:660px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted);padding:6px 8px 2px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:5px;vertical-align:-1px}
+.panel{position:sticky;top:14px}
+@media (max-height:700px){.panel{position:static}}
+.step-no{font-size:13px;font-weight:700;color:var(--accent-d);letter-spacing:.05em}
+.cap{min-height:170px}
+.cap h3{font-size:clamp(19px,2.3vw,24px);margin:6px 0 10px}
+.cap p{color:#3d4a51}
+.cap.fade{animation:capin .45s ease}
+@keyframes capin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.callout{display:none;margin-top:14px;padding:12px 14px 12px 46px;border-radius:14px;background:var(--amber-l);border:1px solid #f4d6a8;position:relative;font-weight:600;color:#6b4508}
+.callout.show{display:block;animation:capin .5s ease}
+.callout::before{content:"!";position:absolute;left:13px;top:13px;width:22px;height:22px;border-radius:50%;background:var(--amber);color:#fff;font-weight:800;font-size:14px;line-height:22px;text-align:center}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 16px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:15px;font-weight:600;transition:background .2s,border-color .2s,transform .1s;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.btn:hover{border-color:var(--accent)}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--accent-d);border-color:var(--accent-d);color:#fff;min-width:104px}
+.btn.primary:hover{background:#0f5f54}
+.btn:focus-visible,.chip:focus-visible,.seg button:focus-visible{outline:3px solid rgba(31,157,139,.45);outline-offset:2px}
+.btn svg{width:16px;height:16px}
+.progress{height:5px;background:#e9eef0;border-radius:99px;margin-top:14px;overflow:hidden}
+.progress>div{height:100%;width:0;background:var(--accent);border-radius:99px}
+.chips{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px 6px;align-items:center}
+.chips li{display:flex;align-items:center;gap:6px}
+.chips li+li::before{content:"";width:14px;height:2px;background:#cdd6da;border-radius:2px}
+.chip{min-height:40px;padding:4px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:14px;font-weight:600;color:var(--muted);display:inline-flex;align-items:center;gap:7px;transition:all .25s}
+.chip b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#eef2f3;font-size:12px;color:var(--muted);transition:all .25s}
+.chip:hover{border-color:var(--accent)}
+.chip.done{color:var(--ink)}
+.chip.done b{background:#cfe9e4;color:var(--accent-d)}
+.chip.active{background:var(--accent-d);border-color:var(--accent-d);color:#fff;box-shadow:0 4px 12px rgba(31,157,139,.3)}
+.chip.active b{background:#fff;color:var(--accent-d)}
+.chip.painchip.active{background:#c9353a;border-color:#c9353a;box-shadow:0 4px 12px rgba(229,72,77,.3)}
+.chip.painchip.active b{color:#c9353a}
+.hint{font-size:13px;color:var(--muted);margin-top:14px}
+.hint b{color:var(--accent-d)}
+.seg{display:none;background:#eef2f3;border-radius:12px;padding:4px;gap:4px;margin-bottom:14px}
+.seg button{flex:1;min-height:44px;border:0;border-radius:9px;background:transparent;cursor:pointer;font-weight:600;font-size:14.5px;color:var(--muted);transition:all .25s}
+.seg button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.seg button.bad[aria-pressed="true"]{color:#b4232a}
+.seg button.good[aria-pressed="true"]{color:var(--accent-d)}
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cmp{border:1px solid var(--line);border-radius:16px;padding:12px 14px 16px;background:linear-gradient(180deg,#fbfdfd,#f4f8f8)}
+.cmp.bad{background:linear-gradient(180deg,#fffafa,#fcf3f3);border-color:#f3dada}
+.cmp h3{font-size:18px;display:flex;align-items:center;gap:8px;margin:2px 4px 6px}
+.tag{font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px}
+.tag.good{background:var(--accent-l);color:var(--accent-d)}
+.tag.bad{background:var(--pain-l);color:#b4232a}
+.cmp svg.fig{max-height:470px}
+.cmp ul{margin:8px 4px 0;padding:0;list-style:none;font-size:14.5px;color:#3d4a51}
+.cmp li{padding-left:24px;position:relative;margin:4px 0}
+.cmp li::before{position:absolute;left:0;top:1px;font-weight:800}
+.cmp .ok li::before{content:"✓";color:var(--accent)}
+.cmp .no li::before{content:"✕";color:var(--pain)}
+.cmp .capB{display:none}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:center}
+.duo .stage svg.fig{max-height:520px}
+.bigq{font-size:clamp(18px,2.2vw,22px);font-weight:700;margin:4px 0 12px}
+.bigq em{font-style:normal;color:var(--accent-d);background:var(--accent-l);padding:0 6px;border-radius:6px}
+.points{margin:12px 0 0;padding:0;list-style:none}
+.points li{position:relative;padding-left:26px;margin:9px 0;color:#3d4a51}
+.points li::before{content:"";position:absolute;left:4px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-l)}
+.mini-ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;align-items:center}
+.mini-ctl .seg{display:flex;flex:1 1 260px;margin:0}
+.state-line{margin-top:12px;font-size:14px;font-weight:600;color:var(--muted);min-height:24px}
+.flowchain{display:flex;align-items:stretch;gap:0;flex-wrap:nowrap;margin-top:8px}
+.fnode{flex:1;background:#f6f9f9;border:1px solid var(--line);border-radius:14px;padding:12px 10px;text-align:center;font-weight:700;position:relative;animation:nodepulse 6s ease-in-out infinite}
+.fnode small{display:block;font-weight:500;color:var(--muted);font-size:12.5px;margin-top:2px}
+.fnode.pain{background:var(--pain-l);border-color:#f2c9ca;color:#b4232a}
+.farr{flex:0 0 26px;display:grid;place-items:center;color:#a3b0b6}
+.farr svg{width:20px;height:20px}
+@keyframes nodepulse{0%,100%{box-shadow:none;transform:none}8%{box-shadow:0 0 0 3px rgba(224,138,30,.35);transform:translateY(-2px)}16%{box-shadow:none;transform:none}}
+.stabwrap{margin-top:16px;display:flex;flex-direction:column;align-items:center}
+.brace{width:92%;height:22px;border:2px solid var(--accent);border-bottom:0;border-radius:14px 14px 0 0;position:relative;opacity:.7}
+.brace::after{content:"";position:absolute;left:50%;bottom:-12px;width:2px;height:12px;background:var(--accent)}
+.stab{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:10px;background:var(--accent-l);border-radius:16px;padding:12px 16px}
+.stab .lbl{font-weight:800;color:var(--accent-d)}
+.snode{background:#fff;border:1px solid #bfe3dc;border-radius:12px;padding:8px 14px;font-weight:700;text-align:center}
+.snode small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+.plus{font-weight:800;color:var(--accent-d);font-size:20px}
+.callout.static{display:block;margin-top:18px}
+.acts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:6px}
+.act{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fbfcfc}
+.act .ico{height:58px;display:flex;align-items:center}
+.act .ico svg{height:56px;width:auto}
+.act h3{font-size:16.5px;margin:8px 0 4px}
+.act p{font-size:14px;color:#47555c}
+.act.sit{background:var(--accent-l);border-color:#c5e6df}
+.gloss-box summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}
+.gloss{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:8px 0 0}
+.gloss div{padding:9px 0;border-bottom:1px solid var(--line)}
+.gloss dt{font-weight:700}
+.gloss dd{margin:2px 0 0;color:#47555c;font-size:14.5px}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:4px 0 36px}
+#tip{position:fixed;z-index:50;max-width:260px;background:rgba(28,40,46,.96);color:#fff;border-radius:12px;padding:9px 12px;font-size:13.5px;line-height:1.55;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;box-shadow:0 8px 24px rgba(0,0,0,.18);left:0;top:0}
+#tip.show{opacity:1;transform:none}
+#tip b{display:block;font-size:14.5px;margin-bottom:2px;color:#9fe5d9}
+/* breathing section */
+.canister{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.cn{font-size:13.5px;font-weight:600;background:#f4f8f8;border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:#3d4a51}
+.cn b{color:var(--accent-d);margin-right:4px}
+.cn.echo{background:var(--accent-l);border-color:#c5e6df;color:var(--accent-d)}
+.player{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 24px;align-items:center;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,#f7fbfb,#edf6f4);border:1px solid #d3eae5;margin-bottom:18px}
+.ring{width:132px;height:132px;display:block}
+.rtrack{fill:none;stroke:#dce9e8;stroke-width:9}
+.rprog{fill:none;stroke:var(--accent);stroke-width:9;stroke-linecap:round;transform:rotate(-90deg);transform-origin:80px 80px}
+.rprog.out{stroke:#2f7aa8}.rprog.hold{stroke:#8b989f}
+.rball{fill:rgba(31,157,139,.14);stroke:rgba(31,157,139,.5);stroke-width:2}
+.rball.out{fill:rgba(47,122,168,.12);stroke:rgba(47,122,168,.45)}
+.rnum{font-size:44px;font-weight:800;fill:var(--ink);text-anchor:middle}
+.rsec{font-size:12px;fill:var(--muted);text-anchor:middle;font-weight:600}
+.bp-phase{font-size:clamp(30px,4.2vw,42px);font-weight:800;line-height:1.15;color:var(--muted)}
+.bp-phase.in{color:var(--accent-d)}.bp-phase.out{color:#2f7aa8}.bp-phase.hold{color:#6b7a82}.bp-phase.done{color:var(--accent-d)}
+.bp-cue{color:#47555c;margin-top:4px;font-size:15px}
+.bp-meta{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:14px;font-weight:700;color:#3d4a51;flex-wrap:wrap}
+.rbar{flex:1 1 120px;max-width:280px;height:6px;background:#dbe7e7;border-radius:99px;overflow:hidden}
+.rbar>div{height:100%;width:0;background:var(--accent);border-radius:99px}
+.bp-meta .muted{color:var(--muted);font-weight:600}
+.bp-ctl{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.rhy{display:flex;flex-wrap:wrap;background:#e2eded;border-radius:12px;padding:4px;gap:4px}
+.rhy button{border:0;background:transparent;min-height:36px;padding:0 12px;border-radius:9px;font-weight:600;font-size:13.5px;cursor:pointer;color:var(--muted)}
+.rhy button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.rhy button:focus-visible{outline:3px solid rgba(31,157,139,.45);outline-offset:1px}
+.br-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.brc{border:1px solid #c9e7e1;border-radius:16px;padding:12px 14px 14px;background:linear-gradient(180deg,#fbfefd,#f1f8f6)}
+.brc.bad{border-color:#f1dbb6;background:linear-gradient(180deg,#fffdf8,#fcf4e8)}
+.brc h3{font-size:17px;display:flex;align-items:center;gap:8px;margin:2px 4px 6px;flex-wrap:wrap}
+.brc .d{font-size:14px;color:#47555c;margin:6px 4px 0}
+.tag.warn{background:var(--amber-l);color:#8f5409}
+.dotc{width:10px;height:10px;border-radius:50%;display:inline-block}
+.brlegend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted);margin:10px 2px 0}
+.brlegend i{display:inline-block;width:14px;height:10px;border-radius:3px;margin-right:5px}
+.brlegend i.dash{background:none;border-top:2px dashed #7d8a91;height:0;width:18px;vertical-align:3px;border-radius:0}
+.bf .bl{font-size:13px;font-weight:700;fill:#2b373d}
+.bf .at{font-size:12.5px;font-weight:700}
+.bf .it{font-size:11px;font-weight:700;fill:#5f6d75}
+.br-text{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:22px;margin-top:20px}
+.br-text h3{font-size:17px;margin-bottom:6px}
+.br-text p{color:#3d4a51}
+.cuebox{background:#f6f9f9;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.cues{list-style:none;padding:0;margin:0;counter-reset:c}
+.cues li{counter-increment:c;position:relative;padding-left:34px;margin:9px 0;color:#3d4a51}
+.cues li::before{content:counter(c);position:absolute;left:0;top:2px;width:23px;height:23px;line-height:23px;text-align:center;border-radius:50%;background:var(--accent-d);color:#fff;font-size:12.5px;font-weight:700}
+.xref{display:block;width:fit-content;margin-top:2px;padding:6px 0;color:var(--accent-d);font-weight:700;font-size:14px;text-decoration:none}
+.xref:hover{text-decoration:underline}
+@media (max-width:900px){.br-text{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .seg.brseg{display:flex}
+  .br-grid{grid-template-columns:1fr}
+  .br-grid[data-show="good"] .brc.bad{display:none}
+  .br-grid[data-show="bad"] .brc.good{display:none}
+  .bf .bl{font-size:17px}
+  .bf .at{font-size:16px}
+  .bf .it{font-size:13px}
+  .ring{width:104px;height:104px}
+  .player{padding:14px;gap:10px 14px}
+  .bp-cue{font-size:14px}
+  .brc{padding:10px 6px 12px}
+  .brc h3,.brc .d{margin-left:8px;margin-right:8px}
+}
+@media (max-width:480px){.rhy button{padding:0 9px;font-size:12.5px}.bp-ctl .btn{flex:1 1 auto}}
+/* rib flare section */
+.rf .bl{font-size:13px;font-weight:700;fill:#2b373d}
+.rf .sl{font-size:11.5px;font-weight:700}
+.rf .it{font-size:11px;font-weight:700;fill:#5f6d75}
+.rf .dir{font-size:11px;font-weight:600;fill:#66757d}
+.cuebox .nb{font-size:14px;color:#6b4508;background:var(--amber-l);border:1px solid #f4d6a8;border-radius:12px;padding:9px 12px;margin:4px 0 10px}
+.pos9090{display:flex;align-items:center;gap:12px;font-size:14px;color:#3d4a51;margin:4px 0 2px}
+.pos9090 svg{flex:0 0 104px;width:104px;height:47px}
+.rfplay{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:16px 26px;align-items:center;margin-top:22px;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,#f7fbfb,#edf6f4);border:1px solid #d3eae5}
+.rfp-fig svg{width:100%;height:auto;display:block;max-height:520px}
+.rfp-kicker{font-size:13px;font-weight:700;color:var(--accent-d);letter-spacing:.02em}
+.rfp-head{display:flex;align-items:baseline;gap:14px;margin-top:4px}
+.rfp-num{font-size:40px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
+.rfp-cue{min-height:3.2em}
+.rfp-bar{max-width:none;margin-top:12px;height:8px}
+.rfp-bar>div.out{background:#2f7aa8}
+.rfplay .bp-ctl{margin-top:12px}
+@media (max-width:760px){
+  .seg.rfseg{display:flex}
+  .rf-grid[data-show="good"] .brc.bad{display:none}
+  .rf-grid[data-show="bad"] .brc.good{display:none}
+  .rf .bl{font-size:14.5px}
+  .rf .sl{font-size:13px}
+  .rf .it{font-size:12.5px}
+  .rfplay{grid-template-columns:1fr;padding:12px}
+  .rfp-num{font-size:34px}
+}
+@media (max-width:900px){
+  .chain-grid,.duo{grid-template-columns:1fr}
+  .panel{position:static}
+  .cap{min-height:0}
+  .acts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .duo .txt{order:-1}
+}
+@media (max-width:760px){
+  .card{padding:18px 14px;border-radius:18px}
+  .seg.cmpseg{display:flex}
+  .cmp-grid{grid-template-columns:1fr}
+  .cmp-grid .cmpB{display:none}
+  .cmp-grid[data-show="b"] .cmpA .capA{display:none}
+  .cmp-grid[data-show="b"] .cmpA .capB{display:block}
+  .cmp-grid[data-show="b"] .cmpA{background:linear-gradient(180deg,#fffafa,#fcf3f3);border-color:#f3dada}
+  .flowchain{flex-direction:column}
+  .farr{flex-basis:24px}
+  .farr svg{transform:rotate(90deg)}
+  .brace{display:none}
+  .stage{padding:4px}
+  .controls .btn{flex:1 1 auto;padding:0 10px}
+  .hero{padding-top:28px}
+}
+@media (max-width:480px){
+  .acts{grid-template-columns:1fr}
+  .chips{gap:6px 4px}
+  .chips li+li::before{display:none}
+  .chip{font-size:13px;padding:4px 10px}
+}
+@media (max-width:760px){
+  .chip,.rhy button{min-height:44px}
+  .hint,.legend,.brlegend{font-size:13.5px}
+  .cmp ul{font-size:15px}
+  .fig .dir{font-size:17px}
+  .gloss{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+html.rm{scroll-behavior:auto}
+.rm *,.rm *::before,.rm *::after{animation:none!important;transition:none!important}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="hero wrap">
+  <span class="eyebrow">腰痛科普 · 互动图解</span>
+  <h1>为什么我的腰总是酸？</h1>
+  <p class="sub">骨盆前倾 + 腰肌劳损，往往不是“腰坏了”，而是一条从<b>髋</b>传到<b>腰</b>的<b>代偿链条</b>。跟着动画一步步看清楚。</p>
+  <nav class="toc" aria-label="目录">
+    <a href="#chain">① 骨盆前倾链条</a><a href="#compare">② 前后对比</a><a href="#glute">③ 臀肌 = 刹车</a><a href="#core">④ 深层核心 = 支架</a><a href="#breath">⑤ 腹式呼吸</a><a href="#ribs">⑥ 肋骨外翻</a><a href="#summary">⑦ 总结</a><a href="#action">⑧ 可以怎么做</a><a href="#glossary">附 名词速查</a>
+  </nav>
+  <button class="btn" id="motionBtn" type="button" aria-pressed="false">减少动画</button>
+  <noscript><p class="noscript">本页的示意图和计时器需要启用 JavaScript 才能显示。</p></noscript>
+</header>
+<main class="wrap" id="main" tabindex="-1">
+  <section class="card" id="chain">
+    <div class="sec-head"><span class="sec-no">01</span><h2>骨盆前倾链条：一步一步发生了什么</h2></div>
+    <p class="lead">侧面观（人朝右站立）。点击“播放”自动演示，或点下面的步骤直接跳转。</p>
+    <div class="chain-grid">
+      <div class="stage">
+        <svg class="fig" id="figMain" role="img" aria-label="骨盆、腰椎与相关肌肉的侧面示意图"></svg>
+        <div class="legend" aria-hidden="true">
+          <span><i style="background:#f6f1e7;border:1px solid #b9ab95"></i>骨骼</span>
+          <span><i style="background:#a9d0e8"></i>椎间盘</span>
+          <span><i style="background:#dba08c"></i>肌肉</span>
+          <span><i style="background:#f0a43a"></i>紧张/缩短</span>
+          <span><i style="background:#1f9d8b"></i>发力/稳定</span>
+          <span><i style="background:#e5484d"></i>疼痛/过载</span>
+        </div>
+      </div>
+      <aside class="panel">
+        <div class="step-no" id="stepNo">第 1 / 7 步</div>
+        <div class="cap" id="cap" aria-live="polite" aria-atomic="true">
+          <h3 id="capTitle"></h3>
+          <p id="capText"></p>
+          <div class="callout" id="callout">腰痛往往是“代偿”的结果，不是腰本身坏了。真正的“源头”常在髋屈肌太紧、臀肌和深层核心太弱。</div>
+        </div>
+        <div class="controls">
+          <button class="btn" id="bPrev" aria-label="上一步"><svg viewBox="0 0 16 16"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>上一步</button>
+          <button class="btn primary" id="bPlay"><span id="playIco"></span><span id="playTxt">播放</span></button>
+          <button class="btn" id="bNext" aria-label="下一步">下一步<svg viewBox="0 0 16 16"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="btn" id="bReplay"><svg viewBox="0 0 16 16"><path d="M3 8a5 5 0 1 0 1.6-3.7M3 2.5v2.8h2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>重播</button>
+        </div>
+        <div class="progress" aria-hidden="true"><div id="prog"></div></div>
+        <p class="hint">提示：鼠标<b>悬停</b>（手机<b>轻点</b>）图中的肌肉或骨骼，可查看名称和作用；键盘/读屏用户可展开页尾“名词速查”。←/→ 键可切换步骤。</p>
+      </aside>
+    </div>
+    <ol class="chips" id="chips" aria-label="步骤列表"></ol>
+  </section>
+
+  <section class="card" id="compare">
+    <div class="sec-head"><span class="sec-no">02</span><h2>前后对比：骨盆前倾 vs 中立骨盆</h2></div>
+    <p class="lead">虚线是“髂前上棘—耻骨联合”连线：中立时大致竖直；前倾时上端往前倒。</p>
+    <div class="seg cmpseg" role="group" aria-label="切换对比">
+      <button class="bad" data-v="b" aria-pressed="true">骨盆前倾 + 疼痛</button>
+      <button class="good" data-v="a" aria-pressed="false">中立骨盆</button>
+    </div>
+    <div class="cmp-grid" id="cmpGrid" data-show="b">
+      <div class="cmp cmpA">
+        <div class="capA"><h3>中立骨盆 <span class="tag good">稳定</span></h3></div>
+        <div class="capB"><h3>骨盆前倾 + 疼痛 <span class="tag bad">代偿</span></h3></div>
+        <svg class="fig" id="figCmpA" role="img" aria-label="中立骨盆示意图"></svg>
+        <ul class="ok capA"><li>髂前上棘与耻骨联合大致在一条竖线上</li><li>腰曲适中，椎间盘与小关节受力均匀</li><li>臀肌和深层核心一起把骨盆“摆正”</li></ul>
+        <ul class="no capB"><li>骨盆前倾（示意约 15°），臀部后翘、小腹前凸</li><li>腰曲加深，后方小关节受压</li><li>竖脊肌长期绷紧 → 腰部酸痛</li></ul>
+      </div>
+      <div class="cmp bad cmpB">
+        <h3>骨盆前倾 + 疼痛 <span class="tag bad">代偿</span></h3>
+        <svg class="fig" id="figCmpB" role="img" aria-label="骨盆前倾伴腰痛示意图"></svg>
+        <ul class="no"><li>骨盆前倾（示意约 15°），臀部后翘、小腹前凸</li><li>腰曲加深，后方小关节受压</li><li>竖脊肌长期绷紧 → 腰部酸痛</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="glute">
+    <div class="sec-head"><span class="sec-no">03</span><h2>臀肌 = 骨盆的“刹车”</h2></div>
+    <div class="duo">
+      <div class="txt">
+        <p class="bigq">髂腰肌从<em>前面</em>把骨盆往前下拉，臀大肌从<em>后面</em>把骨盆后缘往下拉。</p>
+        <p style="color:#3d4a51">两者像拔河。臀大肌够有力，骨盆就能被“刹住”、回到中立；臀肌偏弱（久坐时它被压着、几乎不工作）时，髂腰肌往往更容易占上风，骨盆就容易一路前倾。</p>
+        <ul class="points">
+          <li>臀大肌起于骨盆后方与骶骨，止于大腿骨后外侧。</li>
+          <li>它收缩时把骨盆往<b>后倾</b>方向转，正好抵消前倾。</li>
+          <li>练臀不只是为了好看，更是给腰“减负”。</li>
+        </ul>
+        <div class="mini-ctl">
+          <div class="seg" role="group" aria-label="臀肌状态">
+            <button data-v="off" aria-pressed="true">臀肌放松</button>
+            <button class="good" data-v="on" aria-pressed="false">臀肌发力</button>
+          </div>
+          <button class="btn" id="gAuto">自动演示</button>
+        </div>
+        <p class="state-line" id="gState"></p>
+      </div>
+      <div class="stage"><svg class="fig" id="figGlute" role="img" aria-label="臀大肌发力使骨盆回正的示意图"></svg></div>
+    </div>
+  </section>
+
+  <section class="card" id="core">
+    <div class="sec-head"><span class="sec-no">04</span><h2>深层核心 = 腰椎的“内置支架”</h2></div>
+    <div class="duo">
+      <div class="stage"><svg class="fig" id="figCore" role="img" aria-label="腹横肌与多裂肌稳定腰椎的示意图"></svg></div>
+      <div class="txt">
+        <p class="bigq"><em>腹横肌</em>像一条腰带环抱腹部，<em>多裂肌</em>一节一节扣住椎骨。</p>
+        <p style="color:#3d4a51">它们是离脊柱最近的“内层支架”：在肢体动作开始之前就预先收紧，让每节腰椎稳稳待在原位。支架不给力，表层的竖脊肌就只能硬扛，越扛越累。</p>
+        <ul class="points">
+          <li>腹横肌收紧 → 腹腔压力升高，像给腰椎套上一圈护腰。</li>
+          <li>多裂肌逐节激活 → 每一节椎骨都被“扣住”，不晃、不塌。</li>
+          <li>支架稳了，竖脊肌就不必一直硬扛。</li>
+        </ul>
+        <div class="mini-ctl">
+          <div class="seg" role="group" aria-label="深层核心状态">
+            <button data-v="off" aria-pressed="true">核心松弛</button>
+            <button class="good" data-v="on" aria-pressed="false">核心激活</button>
+          </div>
+          <button class="btn" id="cAuto">自动演示</button>
+        </div>
+        <p class="state-line" id="cState"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="breath">
+    <div class="sec-head"><span class="sec-no">05</span><h2>腹式呼吸（横膈膜呼吸）练习</h2></div>
+    <p class="lead">横膈膜是深层核心“圆柱”的<b>顶盖</b>。学会用它呼吸，等于每天给腰椎做几分钟“内部充气”。</p>
+    <div class="canister" aria-label="深层核心圆柱的四个面">
+      <span class="cn"><b>顶盖</b>横膈膜</span><span class="cn"><b>底</b>盆底肌</span><span class="cn"><b>四周</b>腹横肌</span><span class="cn"><b>后方</b>多裂肌</span>
+      <span class="cn echo">臀肌 = 刹车 · 深层核心 = 支架 · 横膈膜 = 顶盖</span>
+    </div>
+
+    <div class="player" id="bPlayer">
+      <div class="ringbox">
+        <svg viewBox="0 0 160 160" class="ring" aria-hidden="true">
+          <circle cx="80" cy="80" r="70" class="rtrack"/>
+          <circle cx="80" cy="80" r="70" class="rprog" id="rProg" stroke-dasharray="439.82" stroke-dashoffset="439.82"/>
+          <circle cx="80" cy="80" r="30" class="rball" id="rBall"/>
+          <text x="80" y="94" class="rnum" id="rNum">4</text>
+          <text x="80" y="114" class="rsec">秒</text>
+        </svg>
+      </div>
+      <div class="bp-info">
+        <div class="bp-phase" id="bpPhase" aria-live="polite">准备</div>
+        <div class="bp-cue" id="bpCue">按“开始”，跟着圆圈呼吸：吸气 4 秒，呼气 6 秒。</div>
+        <div class="bp-meta"><span id="bpRound">共 6 轮</span><div class="rbar" aria-hidden="true"><div id="bpBar"></div></div><span class="muted" id="bpTot">约 1 分钟</span></div>
+      </div>
+      <div class="bp-ctl">
+        <button class="btn primary" id="bpStart"><span id="bpIco"></span><span id="bpTxt">开始</span></button>
+        <button class="btn" id="bpReset"><svg viewBox="0 0 16 16"><path d="M3 8a5 5 0 1 0 1.6-3.7M3 2.5v2.8h2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>重置</button>
+        <div class="rhy" role="group" aria-label="呼吸节奏">
+          <button data-r="46" aria-pressed="true">吸 4 · 呼 6</button>
+          <button data-r="44" aria-pressed="false">吸 4 · 呼 4</button>
+          <button data-r="478" aria-pressed="false">4-7-8（进阶·可选）</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="seg brseg" role="group" aria-label="切换正确或错误的呼吸方式">
+      <button class="good" data-v="good" aria-pressed="true">正确：膈式呼吸</button>
+      <button class="bad" data-v="bad" aria-pressed="false">错误：胸式呼吸</button>
+    </div>
+    <div class="br-grid" id="brGrid" data-show="good">
+      <div class="brc good">
+        <h3><i class="dotc" style="background:#1f9d8b"></i>正确：膈式呼吸 <span class="tag good">推荐</span></h3>
+        <svg class="fig bf" id="bfGood" role="img" aria-label="仰卧屈膝时正确膈式呼吸的侧面示意图"></svg>
+        <p class="d">吸气时横膈膜<b>下移</b>（往骨盆方向），肚子鼓起，下肋向<b>两侧和后背</b>扩张；胸口和肩膀基本不动。</p>
+      </div>
+      <div class="brc bad">
+        <h3><i class="dotc" style="background:#e08a1e"></i>错误：胸式呼吸 <span class="tag warn">代偿</span></h3>
+        <svg class="fig bf" id="bfBad" role="img" aria-label="仰卧屈膝时错误胸式呼吸的侧面示意图"></svg>
+        <p class="d">耸肩、上胸往上抬，横膈膜几乎不动，肚子不鼓甚至往里收——肩颈和斜角肌在“加班”。</p>
+      </div>
+    </div>
+    <div class="brlegend" aria-hidden="true">
+      <span><i style="background:#1f9d8b"></i>正确：膈式呼吸</span>
+      <span><i style="background:#e08a1e"></i>错误：胸式呼吸</span>
+      <span><i style="background:#2f7aa8"></i>呼气时的方向</span>
+      <span><i class="dash"></i>虚线 = 吸气最满时的位置</span>
+    </div>
+
+    <div class="br-text">
+      <div>
+        <h3>它怎么帮到腰？</h3>
+        <p>横膈膜在上、盆底肌在下、腹横肌围一圈、多裂肌守在后方，四者一起在腹腔里形成<b>腹内压</b>，像给腰椎“充气”撑住。前面讲过：臀肌是从下面管住骨盆的刹车，深层核心是支架；加上横膈膜这个顶盖，圆柱才完整。</p>
+        <ul class="points">
+          <li><b>躯干更稳，竖脊肌少代偿：</b>腹内压建立得好，腰椎有了内部支撑，表层的竖脊肌就不必一直硬扛。</li>
+          <li><b>以呼气为主导，帮肋骨“落下来”：</b>慢慢吐尽时肋骨下沉、腹部轻收，能缓和“肋骨外翻 + 骨盆前倾”带来的过度塌腰。</li>
+          <li><b>慢呼吸让身体放松：</b>约每分钟 6 次的慢节奏通常让人更放松，可能减少肌肉的保护性紧张和压力感；压力和睡眠也与疼痛敏感度有关。</li>
+        </ul>
+      </div>
+      <div class="cuebox">
+        <h3>怎么练（每天 5 分钟）</h3>
+        <ol class="cues">
+          <li>仰卧屈膝，双脚踩地；一手放胸口，一手放肚子。</li>
+          <li>吸气：让下面那只手（肚子）升起，上面那只手（胸口）基本不动；同时感觉下肋向<b>两侧和后背</b>展开。</li>
+          <li>呼气：慢慢把气吐完，感觉<b>下肋下沉、向内收拢</b>，腹部轻轻收紧。</li>
+          <li>用上面的计时器跟着节奏走；全程自然呼吸，不需要刻意憋气。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="ribs">
+    <div class="sec-head"><span class="sec-no">06</span><h2>肋骨外翻：链条的“上半段”</h2></div>
+    <p class="lead">骨盆前倾时，上面的胸廓也常跟着“后仰”，下肋往前翻起——这就是<b>肋骨外翻</b>。它和骨盆前倾是同一个代偿模式的上下两端。</p>
+
+    <div class="seg rfseg" role="group" aria-label="切换肋骨外翻或肋骨中立">
+      <button class="bad" data-v="bad" aria-pressed="true">肋骨外翻</button>
+      <button class="good" data-v="good" aria-pressed="false">肋骨中立</button>
+    </div>
+    <div class="br-grid rf-grid" id="rfGrid" data-show="bad">
+      <div class="brc bad">
+        <h3><i class="dotc" style="background:#e08a1e"></i>肋骨外翻 <span class="tag warn">代偿</span></h3>
+        <svg class="fig rf" id="rfBad" role="img" aria-label="站立侧面图：肋骨外翻、胸廓后仰、骨盆前倾"></svg>
+        <p class="d">下肋上翻、往前凸，胸廓整体后仰；骨盆前倾、腰曲加深。横膈膜朝向前上方，和盆底肌像一把<b>张开的剪刀</b>。</p>
+      </div>
+      <div class="brc good">
+        <h3><i class="dotc" style="background:#1f9d8b"></i>肋骨中立 <span class="tag good">目标</span></h3>
+        <svg class="fig rf" id="rfGood" role="img" aria-label="站立侧面图：肋骨中立，胸廓叠在骨盆正上方"></svg>
+        <p class="d">下肋下沉、向内收拢，胸廓稳稳“叠”在骨盆正上方；横膈膜与盆底肌上下相对、<b>基本平行</b>，像一个对齐的圆柱。</p>
+      </div>
+    </div>
+    <div class="brlegend" aria-hidden="true">
+      <span><i style="background:#e08a1e"></i>外翻 / 代偿</span>
+      <span><i style="background:#1f9d8b"></i>中立 / 目标</span>
+      <span><i class="dash"></i>虚线 = 横膈膜与盆底肌的朝向</span>
+    </div>
+
+    <div class="br-text">
+      <div>
+        <h3>为什么会这样？</h3>
+        <ul class="points">
+          <li><b>同一条链上的结果：</b>肋骨外翻、骨盆前倾、腰椎前凸加深，都是“整个躯干往后伸”这一个模式的表现——胸廓往后仰、骨盆往前倒，像剪刀张开，腰椎夹在中间被迫更弯。</li>
+          <li><b>圆柱对不齐了：</b>中立时横膈膜和盆底肌上下相对，腹内压均匀地撑住腰椎；剪刀一张开，两者不再相对，前侧腹壁被拉长，“圆柱”就撑不稳。</li>
+          <li><b>深层核心没上岗，竖脊肌来顶班：</b>横膈膜、腹横肌和腹斜肌（把下肋往下、往内拉向骨盆）参与不足时，身体只能靠竖脊肌等背部伸肌一直绷着来“撑住”姿势，腰背自然又紧又累。</li>
+        </ul>
+      </div>
+      <div class="cuebox">
+        <h3>怎么纠正：从呼吸开始</h3>
+        <p class="nb">不要憋着气、硬绷肚子去“收肋骨”——那只是换一种代偿。先练好第 05 节的膈式呼吸，再配合深层核心激活（如死虫式）。</p>
+        <div class="pos9090">
+          <svg viewBox="0 0 120 54" aria-hidden="true"><line x1="2" y1="50" x2="118" y2="50" stroke="#d5dde0" stroke-width="2"/><g fill="none" stroke="#b9c6cb" stroke-width="3" stroke-linecap="round"><path d="M66 24h40"/><path d="M70 24v26M102 24v26"/></g><ellipse cx="36" cy="40" rx="8" ry="4.5" fill="#1f9d8b" opacity=".4"/><g fill="none" stroke="#2b373d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="42" r="6"/><path d="M19 45h39V21h36"/><path d="M22 43l12-4"/></g><text x="44" y="16" font-size="9" font-weight="700" fill="#147a6c">90°</text><text x="61" y="42" font-size="9" font-weight="700" fill="#147a6c">90°</text></svg>
+          <span><b>90/90 仰卧</b>：双脚搭在墙上或椅子上，髋、膝各约 90°，腰背自然贴近地面（不必硬压）。</span>
+        </div>
+        <ol class="cues">
+          <li>双手放在下肋两侧，轻轻包住，用来检查肋骨怎么动。</li>
+          <li>吸气：让肋骨向<b>两侧和后背 360° 扩张</b>，而不是前胸上提、肋弓往前翻。</li>
+          <li>呼气：把气慢慢吐完，感觉<b>下肋下沉、向内收拢</b>，腹部轻收。</li>
+          <li>下一口吸气时，别让肋弓再翻回去；全程自然呼吸，不憋气。</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="rfplay" id="rfPlayer">
+      <div class="rfp-fig">
+        <svg class="fig rf rfb" id="rfBreath" role="img" aria-label="跟练示意：吸气时肋骨向两侧和后方扩张，呼气时下肋下沉内收"></svg>
+      </div>
+      <div class="rfp-info">
+        <div class="rfp-kicker">跟练 · 吸 4 秒 / 呼 6 秒 · 6 轮约 1 分钟</div>
+        <div class="rfp-head"><span class="bp-phase" id="rfPhase" aria-live="polite">准备</span><span class="rfp-num" id="rfNum">4</span></div>
+        <div class="bp-cue rfp-cue" id="rfCue"></div>
+        <div class="rbar rfp-bar" aria-hidden="true"><div id="rfBar"></div></div>
+        <div class="bp-meta"><span id="rfRound">共 6 轮</span></div>
+        <div class="bp-ctl">
+          <button class="btn primary" id="rfStart"><span id="rfIco"></span><span id="rfTxt">开始</span></button>
+          <button class="btn" id="rfReset"><svg viewBox="0 0 16 16"><path d="M3 8a5 5 0 1 0 1.6-3.7M3 2.5v2.8h2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>重置</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="summary">
+    <div class="sec-head"><span class="sec-no">07</span><h2>总结：一条链，两个稳定器</h2></div>
+    <p class="lead">问题从髋开始，最后由腰来“买单”。</p>
+    <div class="flowchain">
+      <div class="fnode" style="animation-delay:0s">髋屈肌紧<small>髂腰肌变短</small></div>
+      <div class="farr"><svg viewBox="0 0 20 20"><path d="M3 10h12m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="fnode" style="animation-delay:.6s">骨盆前倾<small>ASIS 前下移，常伴肋骨外翻</small></div>
+      <div class="farr"><svg viewBox="0 0 20 20"><path d="M3 10h12m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="fnode" style="animation-delay:1.2s">腰椎代偿<small>腰曲加深、小关节受压</small></div>
+      <div class="farr"><svg viewBox="0 0 20 20"><path d="M3 10h12m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="fnode" style="animation-delay:1.8s">竖脊肌代偿<small>长期绷紧、疲劳</small></div>
+      <div class="farr"><svg viewBox="0 0 20 20"><path d="M3 10h12m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="fnode pain" style="animation-delay:2.4s">后背痛<small>酸、胀、累</small></div>
+    </div>
+    <div class="stabwrap">
+      <div class="brace" aria-hidden="true"></div>
+      <div class="stab">
+        <span class="lbl">稳定器：</span>
+        <div class="snode">臀肌<small>刹车：让骨盆往后倾回来</small></div>
+        <span class="plus">+</span>
+        <div class="snode">深层核心<small>支架：腹横肌、多裂肌、横膈膜</small></div>
+        <span class="lbl" style="font-weight:600">→ 从源头拉住整条链</span>
+      </div>
+    </div>
+    <div class="callout static">腰痛往往是“代偿”的结果，不是腰本身坏了。</div>
+  </section>
+
+  <section class="card" id="action">
+    <div class="sec-head"><span class="sec-no">08</span><h2>可以怎么做</h2></div>
+    <p class="lead">松开“拉的一方”，练强“稳的一方”。</p>
+    <div class="acts">
+      <div class="act">
+        <div class="ico"><svg viewBox="0 0 96 56" aria-hidden="true"><line x1="4" y1="50" x2="92" y2="50" stroke="#d5dde0" stroke-width="2"/><circle cx="46" cy="36" r="7" fill="#f0a43a" opacity=".35"/><g fill="none" stroke="#2b373d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="8" r="5"/><path d="M50 14 49 32"/><path d="M49 32 34 48 16 49"/><path d="M49 32 68 32 69 49"/><path d="M50 18 64 28"/></g></svg></div>
+        <h3>拉伸髋屈肌</h3><p>单膝跪姿弓步拉伸：后膝着地，夹紧臀部、骨盆微微后卷，感到后腿大腿根前侧被拉开；腰别塌，不要痛。</p>
+      </div>
+      <div class="act">
+        <div class="ico"><svg viewBox="0 0 96 56" aria-hidden="true"><line x1="4" y1="50" x2="92" y2="50" stroke="#d5dde0" stroke-width="2"/><circle cx="50" cy="30" r="8" fill="#1f9d8b" opacity=".3"/><g fill="none" stroke="#2b373d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="43" r="5"/><path d="M19 46 50 30"/><path d="M50 30 68 24 76 48"/><path d="M22 47 42 48"/></g></svg></div>
+        <h3>强化臀肌</h3><p>臀桥、蚌式。发力时想着“用屁股把骨盆往后卷”，而不是用腰去顶。</p>
+      </div>
+      <div class="act">
+        <div class="ico"><svg viewBox="0 0 96 56" aria-hidden="true"><line x1="4" y1="50" x2="92" y2="50" stroke="#d5dde0" stroke-width="2"/><ellipse cx="38" cy="44" rx="16" ry="5" fill="#1f9d8b" opacity=".3"/><g fill="none" stroke="#2b373d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="42" r="5"/><path d="M19 45 52 45"/><path d="M26 45 28 20"/><path d="M26 45 10 30"/><path d="M52 45 60 26 76 26"/><path d="M52 45 88 38"/></g></svg></div>
+        <h3>练深层核心</h3><p>死虫式、鸟狗式、普拉提。慢、稳、配合呼吸，全程不塌腰。</p><a class="xref" href="#breath">＋ 每天几分钟膈式呼吸（见第 05 节）</a><a class="xref" href="#ribs">＋ 肋骨外翻：呼气时让下肋落下（见第 06 节）</a>
+      </div>
+      <div class="act sit">
+        <div class="ico"><svg viewBox="0 0 96 56" aria-hidden="true"><circle cx="30" cy="28" r="22" fill="#fff" stroke="#1f9d8b" stroke-width="3"/><path d="M30 14v14l9 6" fill="none" stroke="#2b373d" stroke-width="3" stroke-linecap="round"/><text x="60" y="36" font-size="18" font-weight="800" fill="#147a6c">40′</text></svg></div>
+        <h3>久坐每 40 分钟起身</h3><p>站起来走一走、顺手做一次髋前侧拉伸，别让髂腰肌一直待在缩短位。</p>
+      </div>
+    </div>
+    <p class="hint">训练中若疼痛加重、出现腿麻或无力，请先停下并咨询医生或物理治疗师。</p>
+  </section>
+
+  <section class="card gloss-box" id="glossary">
+    <details>
+      <summary>附：名词速查（图中悬停/轻点提示的文字版）</summary>
+      <dl class="gloss" id="glossList"></dl>
+    </details>
+  </section>
+</main>
+<footer class="wrap">注：本页是简化的科普示意模型，真实的腰痛原因多种多样、因人而异，不能替代专业诊疗。若伴有下肢麻木无力、夜间痛醒、发热、外伤史或大小便异常，请尽快就医。</footer>
+<div id="tip" role="tooltip"></div>
+<script>
+(function(){
+'use strict';
+var NS='http://www.w3.org/2000/svg';
+var rmq=window.matchMedia?matchMedia('(prefers-reduced-motion: reduce)'):null;
+var RM=!!(rmq&&rmq.matches);
+var MQS=window.matchMedia?matchMedia('(max-width: 760px)'):{matches:false};
+var deg=Math.PI/180;
+var H={x:300,y:430};
+var SS0=38, BODY=28, DISC=9, SEG=BODY+DISC, HW=21;
+var COL={bone:'#f6f1e7',boneS:'#b3a48c',disc:'#a9d0e8',discS:'#6ea3c4',
+  muscle:'#dba08c',muscleS:'#b26f5b',tight:'#f0a43a',tightS:'#c47812',
+  weak:'#ead9d2',weakS:'#c6aea5',act:'#86d1c3',accent:'#1f9d8b',accentS:'#147a6c',
+  pain:'#e5484d',painS:'#b4232a',ink:'#51606a'};
+function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);if(attrs)for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+function sa(e,attrs){for(var k in attrs)e.setAttribute(k,attrs[k]);}
+function r1(n){return Math.round(n*10)/10;}
+function add(a,b){return{x:a.x+b.x,y:a.y+b.y};}
+function sub(a,b){return{x:a.x-b.x,y:a.y-b.y};}
+function mul(a,k){return{x:a.x*k,y:a.y*k};}
+function len(a){return Math.hypot(a.x,a.y);}
+function unit(a){var l=len(a)||1;return{x:a.x/l,y:a.y/l};}
+function lerp(a,b,t){return a+(b-a)*t;}
+function lerpP(a,b,t){return{x:lerp(a.x,b.x,t),y:lerp(a.y,b.y,t)};}
+function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+function F(x,y){return{x:H.x+x,y:H.y+y};}
+function rot(p,a,c){c=c||H;var s=Math.sin(a*deg),co=Math.cos(a*deg),dx=p.x-c.x,dy=p.y-c.y;return{x:c.x+dx*co-dy*s,y:c.y+dx*s+dy*co};}
+function ps(p){return r1(p.x)+','+r1(p.y);}
+var rgbCache={};
+function rgb(h){if(!rgbCache[h]){var s=h.slice(1);rgbCache[h]=[parseInt(s.slice(0,2),16),parseInt(s.slice(2,4),16),parseInt(s.slice(4,6),16)];}return rgbCache[h];}
+function mixA(A,B,t){t=clamp(t,0,1);return[lerp(A[0],B[0],t),lerp(A[1],B[1],t),lerp(A[2],B[2],t)];}
+function css(A){return'rgb('+Math.round(A[0])+','+Math.round(A[1])+','+Math.round(A[2])+')';}
+function mix(a,b,t){return css(mixA(rgb(a),rgb(b),t));}
+function smooth(pts,closed){
+  var n=pts.length;if(n<2)return'';
+  var d='M'+ps(pts[0]);
+  function g(i){return closed?pts[(i+n)%n]:pts[clamp(i,0,n-1)];}
+  var m=closed?n:n-1;
+  for(var i=0;i<m;i++){
+    var p0=g(i-1),p1=g(i),p2=g(i+1),p3=g(i+2);
+    var c1={x:p1.x+(p2.x-p0.x)/6,y:p1.y+(p2.y-p0.y)/6};
+    var c2={x:p2.x-(p3.x-p1.x)/6,y:p2.y-(p3.y-p1.y)/6};
+    d+='C'+ps(c1)+' '+ps(c2)+' '+ps(p2);
+  }
+  return closed?d+'Z':d;
+}
+function band(center,widths){
+  var L=[],R=[],n=center.length;
+  for(var i=0;i<n;i++){
+    var a=center[Math.max(0,i-1)],b=center[Math.min(n-1,i+1)];
+    var t=unit(sub(b,a)),nx=-t.y,ny=t.x,w=widths[i]/2;
+    L.push({x:center[i].x+nx*w,y:center[i].y+ny*w});R.push({x:center[i].x-nx*w,y:center[i].y-ny*w});
+  }
+  return smooth(L.concat(R.reverse()),true);
+}
+function tw(s,fs){var w=0;for(var i=0;i<s.length;i++){w+=s.charCodeAt(i)<256?fs*0.58:fs;}return w;}
+function ease(p){return p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;}
+
+/* ---------- spine geometry ---------- */
+function mkVert(c,up,name){
+  var ang=Math.atan2(up.x,-up.y);
+  var a={x:Math.cos(ang),y:Math.sin(ang)};
+  function L(x,y){return{x:c.x+a.x*x-up.x*y,y:c.y+a.y*x-up.y*y};}
+  return{c:c,up:up,a:a,ang:ang,name:name,L:L,ta:L(HW,-BODY/2),tp:L(-HW,-BODY/2),ba:L(HW,BODY/2),bp:L(-HW,BODY/2)};
+}
+function spine(tilt,lean){
+  var ssD=SS0+tilt,ss=ssD*deg;
+  var s1c=rot(F(-45,-95),tilt);
+  var e={x:Math.cos(ss),y:Math.sin(ss)};
+  var s1a=add(s1c,mul(e,HW)),s1p=sub(s1c,mul(e,HW));
+  var a0=ssD*0.72*deg,t0={x:Math.sin(a0),y:-Math.cos(a0)};
+  var aT=(-14+lean*22)*deg,t3={x:Math.sin(aT),y:-Math.cos(aT)};
+  var top={x:248+lean*34,y:150+lean*4};
+  var p0=s1c,p1=add(s1c,mul(t0,62)),p3=top,p2=sub(top,mul(t3,66));
+  var N=120,pts=[],cum=[0];
+  for(var i=0;i<=N;i++){var t=i/N,u=1-t;
+    pts.push({x:u*u*u*p0.x+3*u*u*t*p1.x+3*u*t*t*p2.x+t*t*t*p3.x,y:u*u*u*p0.y+3*u*u*t*p1.y+3*u*t*t*p2.y+t*t*t*p3.y});
+    if(i>0)cum.push(cum[i-1]+len(sub(pts[i],pts[i-1])));}
+  var total=cum[N];
+  function at(s){
+    if(s>=total){var tl=unit(sub(pts[N],pts[N-3]));return{p:add(pts[N],mul(tl,s-total)),t:tl};}
+    var j=1;while(cum[j]<s)j++;
+    var k=(s-cum[j-1])/(cum[j]-cum[j-1]);
+    return{p:lerpP(pts[j-1],pts[j],k),t:unit(sub(pts[Math.min(N,j+2)],pts[Math.max(0,j-3)]))};
+  }
+  var verts=[];
+  for(var v=0;v<5;v++){var r=at(v*SEG+DISC+BODY/2);verts.push(mkVert(r.p,r.t,'L'+(5-v)));}
+  var prev=verts[4],thor=[];
+  for(var q=0;q<2;q++){
+    var ang=prev.ang-5*deg,up={x:Math.sin(ang),y:-Math.cos(ang)};
+    var c=add(add(prev.c,mul(prev.up,BODY/2)),mul(up,DISC+BODY/2));
+    var tv=mkVert(c,up,q===0?'T12':'T11');thor.push(tv);prev=tv;
+  }
+  return{s1c:s1c,s1a:s1a,s1p:s1p,e:e,verts:verts,thor:thor};
+}
+var G0=spine(0,0);
+
+var TIPS={
+  ip:['髂腰肌（腰大肌 + 髂肌）','最主要的髋屈肌，负责抬腿；久坐后变短变紧，会把骨盆往前下方拉。'],
+  glute:['臀大肌','伸髋，同时把骨盆后方往下拉（向后倾）——对抗髋屈肌的“刹车”。'],
+  es:['竖脊肌','腰背部表层的长条肌肉，负责伸直脊柱；腰曲过深时会长期绷紧代偿。'],
+  mf:['多裂肌','紧贴脊柱的深层小肌肉，一节一节地稳定椎骨。'],
+  ta:['腹横肌','最深层的腹肌，像腰带一样环抱腹部，收紧时给腰椎“加固”。'],
+  disc:['椎间盘','椎骨之间的“减震垫”；腰曲过深时，后侧受到的压力增加。'],
+  facet:['小关节（关节突关节）','椎骨后方成对的小关节；腰曲过大时被挤压，是常见的酸痛来源之一。'],
+  sacrum:['骶骨','腰椎的“地基”，嵌在骨盆正中，随骨盆一起倾斜。'],
+  pelvis:['骨盆（髂骨）','连接脊柱与下肢；它前倾还是摆正，决定了腰椎的曲度。'],
+  asis:['髂前上棘 ASIS','骨盆前方最突出的骨点；骨盆前倾时向前下方移动。'],
+  psis:['髂后上棘 PSIS','骨盆后方的骨点（腰窝处）；骨盆前倾时向上翘。'],
+  femur:['股骨 / 髋关节','大腿骨；股骨头与骨盆的髋臼构成髋关节，骨盆绕它前后转动。'],
+  pain:['疼痛区域','受压的小关节和疲劳的肌肉发出的“过载”信号。'],
+  brain:['大脑','痛觉最终在大脑里被感知、被解读。'],
+  lumbar:['腰椎 L1–L5','五节腰椎承担上半身重量；骨盆前倾时整段腰曲被迫加深。'],
+  L1:['第 1 腰椎（L1）','腰椎最上一节，与胸椎相接。'],
+  L2:['第 2 腰椎（L2）','腰椎之一；骨盆前倾时整段腰曲加深。'],
+  L3:['第 3 腰椎（L3）','通常是腰曲最“靠前”的一节。'],
+  L4:['第 4 腰椎（L4）','L4–L5 是承压最多的节段之一。'],
+  L5:['第 5 腰椎（L5）','最下面的腰椎，坐在骶骨上；L5–S1 受骨盆倾斜影响最大。'],
+  T12:['第 12 胸椎（T12）','胸椎最下端，与腰椎相连。'],
+  T11:['第 11 胸椎（T11）','胸椎的一部分（图中淡化显示）。']
+};
+var DEF={tilt:0,lean:0,ipTight:0,weak:0,gluteAct:0,esTense:0,discLoad:0,pain:0,signal:0,taAct:0,mfAct:0,plumb:0,curveMark:0,
+  hlIp:0,hlPelvis:0,hlLumbar:0,hlDisc:0,hlEs:0,hlGlute:0,
+  arIp:0,arTilt:0,arComp:0,arEs:0,arGlute:0,arPost:0,arTa:0};
+function full(s){var o={};for(var k in DEF)o[k]=(s&&k in s)?s[k]:DEF[k];return o;}
+var LF=16;
+var LBL={
+  es:{side:'L',y:168,text:'竖脊肌',anchor:function(K){return K.v[3].L(-93,4);},pills:[{text:'过劳紧绷',color:COL.painS,val:function(c){return c.esTense;}}]},
+  mf:{side:'L',y:236,text:'多裂肌',anchor:function(K){return K.mfMid;},pills:[{text:'逐节稳定',color:COL.accentS,val:function(c){return c.mfAct;}}]},
+  psis:{side:'L',y:330,text:'髂后上棘',sub:'PSIS',anchor:function(K){return K.pel(-78,-92);}},
+  sacrum:{side:'L',y:408,text:'骶骨',anchor:function(K){return K.pel(-82,-52);}},
+  glute:{side:'L',y:478,text:'臀大肌',anchor:function(K){return K.gluteC;},pills:[{text:'被拉长·偏弱',color:'#66757d',val:function(c){return c.weak*(1-c.gluteAct);}},{text:'发力',color:COL.accentS,val:function(c){return c.gluteAct;}}]},
+  lumbar:{side:'R',y:104,text:'腰椎 L1–L5',anchor:function(K){return K.v[4].L(HW,-6);}},
+  ta:{side:'R',y:196,text:'腹横肌',anchor:function(K){return K.beltFront;},pills:[{text:'松弛',color:'#66757d',val:function(c){return c.weak*(1-c.taAct);}},{text:'收紧',color:COL.accentS,val:function(c){return c.taAct;}}]},
+  ip:{side:'R',y:276,text:'髂腰肌',anchor:function(K){return K.psoasMid;},pills:[{text:'紧张·缩短',color:'#a35b08',val:function(c){return c.ipTight;}}]},
+  asis:{side:'R',y:346,text:'髂前上棘',sub:'ASIS',anchor:function(K){return K.pel(55,-80);}},
+  hip:{side:'R',y:436,text:'髋关节',tip:'femur',anchor:function(){return F(16,-12);}},
+  femur:{side:'R',y:566,text:'股骨',anchor:function(){return F(22,150);}}
+};
+var ILIUM='M-78,-92 C-74,-126 -50,-146 -20,-143 C14,-140 44,-112 55,-80 Q53,-66 47,-55 Q40,-42 38,-30 C52,-16 58,10 56,38 Q50,50 35,52 C12,56 -8,72 -30,66 Q-46,60 -45,40 L-46,10 Q-52,-2 -57,-10 Q-50,-40 -70,-62 L-76,-74 Q-82,-84 -78,-92 Z';
+var SACRUM='M-28.5,-82.1 C-40,-62 -58,-42 -76,-28 C-88,-18 -96,-6 -100,4 L-104,14 C-110,12 -114,2 -114,-8 C-118,-30 -116,-60 -104,-84 L-92,-102 L-61.5,-107.9 Z';
+var VPOST='M-20,-9 L-30,-10 L-32,-18 Q-34,-24 -39,-21 L-41,-10 L-60,-7 Q-70,-5 -68,4 L-63,13 L-42,10 L-44,19 Q-42,24 -37,21 L-32,8 L-20,5 Z';
+var NOW=performance.now()/1000;
+function Fig(svg,opt){
+  this.svg=svg;this.opt=opt||{};this.p=svg.id+'-';
+  this.cur=full(this.opt.state);this.from=full(this.opt.state);this.to=full(this.opt.state);
+  this.t0=0;this.dur=0;this.visible=true;this.dirty=true;this.lt=0;
+  sa(svg,{viewBox:this.opt.viewBox||'0 0 540 620',preserveAspectRatio:'xMidYMid meet'});
+  this.build();
+  this.render(0);
+}
+Fig.prototype.setTarget=function(s,dur){
+  this.from={};for(var k in this.cur)this.from[k]=this.cur[k];
+  this.to=full(s);this.t0=NOW;this.dur=RM?0:(dur==null?1.3:dur);this.dirty=true;
+};
+Fig.prototype.snap=function(s){this.cur=full(s);this.from=full(s);this.to=full(s);this.dur=0;this.dirty=true;};
+Fig.prototype.tick=function(t){
+  var p=this.dur>0?clamp((t-this.t0)/this.dur,0,1):1,e=ease(p);
+  if(p>=1&&(RM?!this.dirty:t-this.lt<0.03))return;
+  for(var k in this.to)this.cur[k]=this.from[k]+(this.to[k]-this.from[k])*e;
+  this.lt=t;if(p>=1)this.dirty=false;
+  this.render(t);
+};
+Fig.prototype.build=function(){
+  var s=this.svg,p=this.p,self=this;
+  var defs=el('defs',null,s);
+  var f=el('filter',{id:p+'glow',x:'-60%',y:'-60%',width:'220%',height:'220%'},defs);el('feGaussianBlur',{stdDeviation:'4.5'},f);
+  var f2=el('filter',{id:p+'sh',x:'-20%',y:'-20%',width:'140%',height:'140%'},defs);
+  el('feDropShadow',{dx:'0',dy:'1.5',stdDeviation:'1.6','flood-color':'#4a3a2a','flood-opacity':'.18'},f2);
+  var rg=el('radialGradient',{id:p+'pg'},defs);
+  el('stop',{offset:'0','stop-color':COL.pain,'stop-opacity':'.75'},rg);
+  el('stop',{offset:'.5','stop-color':COL.pain,'stop-opacity':'.28'},rg);
+  el('stop',{offset:'1','stop-color':COL.pain,'stop-opacity':'0'},rg);
+  var lg=el('linearGradient',{id:p+'bone',x1:'0',y1:'0',x2:'0',y2:'1'},defs);
+  el('stop',{offset:'0','stop-color':'#fbf8f1'},lg);el('stop',{offset:'1','stop-color':'#efe7d8'},lg);
+  var mk={acc:COL.accent,amb:COL.tightS,pain:COL.pain,ink:COL.ink};
+  for(var k in mk){var m=el('marker',{id:p+'ah-'+k,viewBox:'0 0 10 10',refX:'4',refY:'5',markerWidth:'3.4',markerHeight:'3.4',orient:'auto-start-reverse'},defs);
+    el('path',{d:'M0,0 L10,5 L0,10 L2.6,5 Z',fill:mk[k]},m);}
+  var BONE='url(#'+p+'bone)';
+  /* silhouette */
+  this.sil=el('path',{fill:'#f7eee6',stroke:'#e8d6c7','stroke-width':'2',class:'np'},s);
+  /* TA far half */
+  this.gTaBack=el('g',{class:'np'},s);
+  this.taBack=el('path',{fill:'none','stroke-width':'7','stroke-linecap':'round','stroke-dasharray':'2 7',opacity:'.7'},this.gTaBack);
+  /* glute */
+  var gGl=el('g',null,s);
+  this.glGlow=el('path',{fill:'none',stroke:COL.accent,'stroke-width':'9',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},gGl);
+  this.glute=el('path',{'data-tip':'glute','stroke-width':'1.8',opacity:'.95'},gGl);
+  this.glFib=el('path',{fill:'none',stroke:'#fff','stroke-width':'1.3',opacity:'.35',class:'np'},gGl);
+  /* pelvis back group */
+  this.gPelB=el('g',null,s);
+  this.iliumGlow=el('path',{d:ILIUM,fill:'none',stroke:COL.accent,'stroke-width':'9',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},this.gPelB);
+  var gIl=el('g',{'data-tip':'pelvis'},this.gPelB);
+  el('path',{d:ILIUM,fill:BONE,stroke:COL.boneS,'stroke-width':'2','stroke-linejoin':'round',filter:'url(#'+p+'sh)'},gIl);
+  el('path',{d:'M-62,-40 C-40,-60 -10,-92 20,-104',fill:'none',stroke:'#d9ccb6','stroke-width':'2','stroke-linecap':'round'},gIl);
+  el('ellipse',{cx:'18',cy:'30',rx:'17',ry:'12',transform:'rotate(-25 18 30)',fill:'#f7eee6',stroke:'#cdbfa8','stroke-width':'1.5'},gIl);
+  el('circle',{cx:'0',cy:'0',r:'29',fill:'#efe5d3',stroke:COL.boneS,'stroke-width':'2'},gIl);
+  this.iliacus=el('path',{d:smooth([{x:-6,y:-126},{x:26,y:-120},{x:50,y:-92},{x:48,y:-58},{x:44,y:-28},{x:34,y:-30},{x:18,y:-62},{x:-2,y:-104}],true),'data-tip':'ip',opacity:'.55','stroke-width':'1.5'},this.gPelB);
+  /* femur (fixed) */
+  var gF=el('g',{'data-tip':'femur',transform:'translate('+H.x+' '+H.y+')'},s);
+  el('path',{d:'M16,16 C21,32 22,46 22,64 L26,230 L-14,230 L-18,92 C-22,76 -34,62 -36,44 C-38,28 -32,15 -24,10 C-16,6 -4,12 4,14 Z',fill:BONE,stroke:COL.boneS,'stroke-width':'2','stroke-linejoin':'round',filter:'url(#'+p+'sh)'},gF);
+  el('ellipse',{cx:'-19',cy:'66',rx:'6',ry:'8',fill:'#efe5d3',stroke:COL.boneS,'stroke-width':'1.5'},gF);
+  el('circle',{cx:'0',cy:'0',r:'24',fill:BONE,stroke:COL.boneS,'stroke-width':'2'},gF);
+  /* sacrum */
+  this.gPelF=el('g',null,s);
+  this.sacGlow=el('path',{d:SACRUM,fill:'none',stroke:COL.accent,'stroke-width':'9',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},this.gPelF);
+  var gS=el('g',{'data-tip':'sacrum'},this.gPelF);
+  el('path',{d:SACRUM,fill:BONE,stroke:COL.boneS,'stroke-width':'2','stroke-linejoin':'round'},gS);
+  ['M-40,-62 L-86,-88','M-58,-42 L-104,-60','M-76,-26 L-112,-34','M-92,-10 L-112,-12'].forEach(function(d){el('path',{d:d,stroke:'#dccfb9','stroke-width':'1.6',fill:'none'},gS);});
+  el('path',{d:'M-28.5,-82.1 L-61.5,-107.9',stroke:'#a8987f','stroke-width':'3','stroke-linecap':'round'},gS);
+  /* discs */
+  var gD=el('g',null,s);this.discs=[];
+  for(var i=0;i<7;i++)this.discs.push(el('path',{'data-tip':'disc','stroke-width':'1.5','stroke-linejoin':'round'},gD));
+  /* vertebrae */
+  var gV=el('g',null,s);this.vEls=[];
+  ['L5','L4','L3','L2','L1','T12','T11'].forEach(function(nm,idx){
+    var g=el('g',{'data-tip':nm},gV);if(idx>4)g.setAttribute('opacity','.5');
+    var glow=el('rect',{x:-HW-2,y:-BODY/2-2,width:HW*2+4,height:BODY+4,rx:'7',fill:'none',stroke:COL.accent,'stroke-width':'6',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},g);
+    el('path',{d:VPOST,fill:BONE,stroke:COL.boneS,'stroke-width':'1.6','stroke-linejoin':'round'},g);
+    el('rect',{x:-HW,y:-BODY/2,width:HW*2,height:BODY,rx:'5',fill:BONE,stroke:COL.boneS,'stroke-width':'1.8'},g);
+    if(idx<5){var t=el('text',{x:'0',y:'3.5','text-anchor':'middle',class:'vtxt np'},g);t.textContent=nm;}
+    self.vEls.push({g:g,glow:glow});
+  });
+  /* facets */
+  var gFa=el('g',null,s);this.facets=[];
+  for(i=0;i<5;i++)this.facets.push(el('circle',{r:'6','data-tip':'facet',fill:COL.pain,opacity:'0'},gFa));
+  /* multifidus */
+  var gM=el('g',null,s);this.mf=[];
+  for(i=0;i<6;i++){
+    var gl=el('path',{fill:'none',stroke:COL.accent,'stroke-width':'10','stroke-linecap':'round',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},gM);
+    var ln=el('path',{fill:'none','stroke-width':'5.5','stroke-linecap':'round','data-tip':'mf'},gM);
+    this.mf.push({gl:gl,ln:ln});
+  }
+  /* erector */
+  var gE=el('g',null,s);
+  this.esGlow=el('path',{fill:'none',stroke:COL.pain,'stroke-width':'8',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},gE);
+  this.es=el('path',{'data-tip':'es','stroke-width':'1.6',opacity:'.92'},gE);
+  this.esFib=el('path',{fill:'none',stroke:'#fff','stroke-width':'1.2',opacity:'.35','stroke-dasharray':'14 8',class:'np'},gE);
+  /* psoas */
+  var gP=el('g',null,s);
+  this.ipGlow=el('path',{fill:'none',stroke:COL.tight,'stroke-width':'9',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},gP);
+  this.psoas=el('path',{'data-tip':'ip','stroke-width':'1.6',opacity:'.9'},gP);
+  this.psFib=el('path',{fill:'none',stroke:'#fff','stroke-width':'1.3',opacity:'.4',class:'np'},gP);
+  /* TA near half + front wall */
+  var gT=el('g',null,s);
+  this.taWall=el('path',{'data-tip':'ta',opacity:'.75'},gT);
+  this.gTaFront=el('g',{'data-tip':'ta'},gT);
+  this.taGlow=el('path',{fill:'none',stroke:COL.accent,'stroke-width':'14',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},this.gTaFront);
+  this.taFront=el('path',{fill:'none','stroke-linecap':'round',opacity:'.92'},this.gTaFront);
+  /* landmarks */
+  this.gLm=el('g',null,s);
+  el('circle',{cx:'55',cy:'-80',r:'5',fill:'#fff',stroke:COL.ink,'stroke-width':'2','data-tip':'asis'},this.gLm);
+  el('circle',{cx:'-78',cy:'-92',r:'5',fill:'#fff',stroke:COL.ink,'stroke-width':'2','data-tip':'psis'},this.gLm);
+  /* plumb */
+  this.gPl=el('g',{class:'np',opacity:'0'},s);
+  this.plV=el('path',{stroke:'#97a4ab','stroke-width':'1.6','stroke-dasharray':'4 4',fill:'none'},this.gPl);
+  this.plL=el('path',{'stroke-width':'2.4','stroke-dasharray':'7 5',fill:'none'},this.gPl);
+  this.plA=el('path',{'stroke-width':'2',fill:'none'},this.gPl);
+  this.plT=el('text',{'font-size':'14','font-weight':'800'},this.gPl);
+  /* curve mark */
+  this.gCv=el('g',{class:'np',opacity:'0'},s);
+  this.cvGhost=el('path',{fill:'none',stroke:'#7d8a91','stroke-width':'2.2','stroke-dasharray':'5 5'},this.gCv);
+  this.cvCur=el('path',{fill:'none',stroke:COL.accent,'stroke-width':'4','stroke-linecap':'round',opacity:'.9'},this.gCv);
+  this.cvT=el('text',{'font-size':'14','font-weight':'800',fill:COL.accentS},this.gCv);this.cvT.textContent='腰曲加深';
+  this.cvT2=el('text',{'font-size':'11.5','font-weight':'600',fill:'#7d8a91'},this.gCv);this.cvT2.textContent='虚线 = 中立时';
+  /* arrows */
+  this.gArr=el('g',{class:'np'},s);
+  function A(c,w){return el('path',{fill:'none',stroke:mk[c],'stroke-width':w||4,'stroke-linecap':'round','marker-end':'url(#'+p+'ah-'+c+')',opacity:'0',class:'flow'},self.gArr);}
+  this.aIp1=A('amb');this.aIp2=A('amb');this.aTilt=A('amb',3.5);
+  this.aComp=[A('pain',4),A('pain',4),A('pain',3),A('pain',3)];
+  this.aEs=[A('pain'),A('pain')];
+  this.compRing=el('ellipse',{fill:'none',stroke:COL.pain,'stroke-width':'2','stroke-dasharray':'5 4',opacity:'0'},self.gArr);
+  this.aGl=A('acc',4.5);this.aPost=A('acc',3.5);
+  this.aTa=[A('acc'),A('acc')];
+  /* pain */
+  this.gPain=el('g',null,s);
+  this.painGlow=el('circle',{fill:'url(#'+p+'pg)',opacity:'0','data-tip':'pain'},this.gPain);
+  this.sigPath=el('path',{fill:'none',stroke:COL.pain,'stroke-width':'1.5','stroke-dasharray':'2 5',opacity:'0',class:'np'},this.gPain);
+  this.gBadge=el('g',{'data-tip':'pain',opacity:'0'},this.gPain);
+  this.badgeRing=el('circle',{r:'18',fill:'none',stroke:COL.pain,'stroke-width':'2.5',class:'np'},this.gBadge);
+  el('circle',{r:'17',fill:COL.pain},this.gBadge);
+  var bt=el('text',{y:'6','text-anchor':'middle','font-size':'17','font-weight':'800',fill:'#fff',class:'np'},this.gBadge);bt.textContent='痛';
+  this.dots=[];for(i=0;i<4;i++)this.dots.push(el('circle',{r:'4.5',fill:COL.pain,opacity:'0',class:'np'},this.gPain));
+  this.gBrain=el('g',{'data-tip':'brain',opacity:'0'},this.gPain);
+  el('rect',{x:'-72',y:'-15',width:'144',height:'30',rx:'15',fill:'#fff',stroke:COL.pain,'stroke-width':'2'},this.gBrain);
+  var brt=el('text',{y:'5','text-anchor':'middle','font-size':'13.5','font-weight':'700',fill:COL.painS},this.gBrain);brt.textContent='大脑：感到“酸痛”';
+  /* labels */
+  this.gLbl=el('g',null,s);this.lbls=[];
+  (this.opt.labels||[]).forEach(function(k){self.lbls.push(self.mkLabel(k,LBL[k]));});
+  if(this.opt.dir!==false){
+    var d1=el('text',{x:'12',y:'22',class:'dir np'},s);d1.textContent='← 后（背侧）';
+    var d2=el('text',{x:'528',y:'22','text-anchor':'end',class:'dir np'},s);d2.textContent='前（腹侧）→';
+  }
+};
+Fig.prototype.mkLabel=function(key,cfg){
+  var g=el('g',{'data-tip':cfg.tip||key},this.gLbl);
+  var line=el('path',{class:'leader'},g);
+  var dot=el('circle',{r:'3.2',class:'ldot'},g);
+  var tg=el('g',null,g);
+  var L=cfg.side==='L',tx=L?12:528,w=tw(cfg.text,LF);
+  el('rect',{x:L?tx-4:tx-w-4,y:cfg.y-17,width:w+8,height:23,rx:'6',fill:'#fff',opacity:'.8'},tg);
+  var t=el('text',{x:tx,y:cfg.y,'text-anchor':L?'start':'end',class:'ltxt'},tg);t.textContent=cfg.text;
+  if(cfg.sub){var st=el('text',{x:tx,y:cfg.y+17,'text-anchor':L?'start':'end',class:'stxt'},tg);st.textContent=cfg.sub;}
+  var pills=(cfg.pills||[]).map(function(pc){
+    var pg=el('g',{opacity:'0',class:'np'},tg);var pw=tw(pc.text,12)+16,px=L?tx:tx-pw;
+    el('rect',{x:px,y:cfg.y+7,width:pw,height:20,rx:'10',fill:pc.color},pg);
+    var pt=el('text',{x:px+pw/2,y:cfg.y+21.5,'text-anchor':'middle',class:'ptxt'},pg);pt.textContent=pc.text;
+    return{g:pg,val:pc.val};
+  });
+  return{line:line,dot:dot,tg:tg,left:L,tx:tx,w:w,ly:cfg.y-5,anchor:cfg.anchor,pills:pills,sc:0};
+};
+Fig.prototype.render=function(t){
+  var c=this.cur,tilt=c.tilt,self=this,i;
+  var Gm=spine(tilt,c.lean),v=Gm.verts,T=Gm.thor,all=v.concat(T);
+  var pel=function(x,y){return rot(F(x,y),tilt);};
+  var trP='translate('+H.x+' '+H.y+') rotate('+tilt.toFixed(2)+')';
+  this.gPelB.setAttribute('transform',trP);this.gPelF.setAttribute('transform',trP);this.gLm.setAttribute('transform',trP);
+  var pulse=RM?1:(0.5+0.5*Math.sin(t*4.2));
+  var tf=clamp(tilt/15,0,1.2);
+  /* vertebrae */
+  all.forEach(function(vv,k){
+    self.vEls[k].g.setAttribute('transform','translate('+r1(vv.c.x)+' '+r1(vv.c.y)+') rotate('+(vv.ang/deg).toFixed(2)+')');
+    if(k<5)self.vEls[k].glow.setAttribute('opacity',(c.hlLumbar*(0.6+0.4*pulse)).toFixed(3));
+  });
+  /* discs + facets */
+  var lw=[1,1,.45,.3,.2];
+  for(i=5;i<7;i++){var lo2=all[i-1],up2=all[i];
+    sa(this.discs[i],{d:'M'+ps(lo2.tp)+'L'+ps(lo2.ta)+'L'+ps(up2.ba)+'L'+ps(up2.bp)+'Z',fill:COL.disc,stroke:COL.discS,opacity:'.5'});}
+  for(i=0;i<5;i++){
+    var lo=i===0?{tp:Gm.s1p,ta:Gm.s1a}:v[i-1],up=v[i];
+    var d='M'+ps(lo.tp)+'L'+ps(lo.ta)+'L'+ps(up.ba)+'L'+ps(up.bp)+'Z';
+    var k=c.discLoad*lw[i]*.85;
+    sa(this.discs[i],{d:d,fill:mix(COL.disc,COL.pain,k),stroke:mix(COL.discS,COL.painS,k)});
+    var fp=up.L(-38,21);
+    sa(this.facets[i],{cx:r1(fp.x),cy:r1(fp.y),opacity:(c.discLoad*lw[i]*(0.65+0.35*pulse)).toFixed(3),r:(5+2.5*c.discLoad*lw[i]).toFixed(2)});
+  }
+  this.iliumGlow.setAttribute('opacity',(c.hlPelvis*(0.6+0.4*pulse)).toFixed(3));this.sacGlow.setAttribute('opacity',(c.hlPelvis*(0.6+0.4*pulse)).toFixed(3));
+  /* psoas */
+  var pc=[v[4].L(14,0),v[3].L(20,0),v[2].L(26,0),v[1].L(31,2),v[0].L(36,6),pel(40,-56),pel(45,-24),F(25,30),F(-14,64)];
+  var ws=[6,9,12,14,16,17,15,11,6],sc=1+.25*c.ipTight;
+  var pd=band(pc,ws.map(function(w){return w*sc;}));
+  var ipF=mix(COL.muscle,COL.tight,c.ipTight),ipS=mix(COL.muscleS,COL.tightS,c.ipTight);
+  var ipO=(.9-.45*Math.max(c.hlDisc,c.signal,c.curveMark*.6)).toFixed(3);
+  sa(this.psoas,{d:pd,fill:ipF,stroke:ipS,opacity:ipO});this.psFib.setAttribute('opacity',(ipO*.45).toFixed(3));
+  sa(this.ipGlow,{d:pd,opacity:(c.hlIp*(0.55+0.45*pulse)).toFixed(3)});
+  this.psFib.setAttribute('d',smooth(pc,false));
+  sa(this.iliacus,{fill:ipF,stroke:ipS});
+  /* glute */
+  var gp=[pel(-82,-112),pel(-118,-84),pel(-140,-38),pel(-142,10),lerpP(pel(-128,48),F(-112,62),.5),F(-84,104),F(-40,124),F(-8,116),F(-22,84),F(-38,46),pel(-60,-20),pel(-70,-82)];
+  var gc=lerpP(pel(-100,-20),F(-50,70),.4),gsc=1+.06*c.gluteAct*(RM?1:(0.85+0.15*pulse));
+  gp=gp.map(function(q){return add(gc,mul(sub(q,gc),gsc));});
+  var gd=smooth(gp,true),wk=c.weak*(1-c.gluteAct);
+  var gF=mixA(mixA(rgb(COL.muscle),rgb(COL.weak),wk),rgb(COL.act),c.gluteAct*.75);
+  var gS=mixA(mixA(rgb(COL.muscleS),rgb(COL.weakS),wk),rgb(COL.accentS),c.gluteAct);
+  sa(this.glute,{d:gd,fill:css(gF),stroke:css(gS)});
+  sa(this.glGlow,{d:gd,opacity:(Math.max(c.hlGlute,c.gluteAct*.7)*(0.55+0.45*pulse)).toFixed(3)});
+  this.glFib.setAttribute('d','M'+ps(lerpP(gp[1],gp[10],.3))+'L'+ps(lerpP(gp[6],gp[8],.5))+'M'+ps(lerpP(gp[2],gp[10],.35))+'L'+ps(lerpP(gp[5],gp[8],.4))+'M'+ps(lerpP(gp[3],gp[9],.3))+'L'+ps(lerpP(gp[5],gp[7],.5)));
+  /* erector spinae */
+  var ec=[T[1].L(-82,-70),T[1].L(-82,0),T[0].L(-83,0),v[4].L(-84,0),v[3].L(-85,0),v[2].L(-86,0),v[1].L(-86,0),v[0].L(-88,0),pel(-104,-74),pel(-112,-44)];
+  var ew=[22,23,24,25,26,27,27,26,18,8],esc=1+.16*c.esTense+(RM?0:.05*c.esTense*Math.sin(t*7));
+  var ed=band(ec,ew.map(function(w){return w*esc;}));
+  sa(this.es,{d:ed,fill:mix(COL.muscle,COL.pain,c.esTense*.85),stroke:mix(COL.muscleS,COL.painS,c.esTense)});
+  sa(this.esGlow,{d:ed,opacity:(Math.max(c.hlEs,c.esTense*.5)*(0.55+0.45*pulse)).toFixed(3)});
+  this.esFib.setAttribute('d',smooth(ec,false));
+  /* multifidus */
+  var mfp=[[T[0].L(-58,6),v[3].L(-40,-12)],[v[4].L(-58,6),v[2].L(-40,-12)],[v[3].L(-58,6),v[1].L(-40,-12)],[v[2].L(-58,6),v[0].L(-40,-12)],[v[1].L(-58,6),pel(-90,-98)],[v[0].L(-58,6),pel(-104,-74)]];
+  for(i=0;i<6;i++){
+    var a=mfp[i][0],b=mfp[i][1],vv=v[clamp(4-i,0,4)],mid=add(lerpP(a,b,.5),mul(vv.a,-5));
+    var md='M'+ps(a)+'Q'+ps(mid)+' '+ps(b);
+    var ai=clamp((c.mfAct-(5-i)*.1)/.45,0,1);
+    sa(this.mf[i].ln,{d:md,stroke:mix('#c27e69',COL.accent,ai)});
+    sa(this.mf[i].gl,{d:md,opacity:(ai*(0.6+0.4*pulse)).toFixed(3)});
+  }
+  var mfMid=lerpP(mfp[1][0],mfp[1][1],.5);
+  /* TA belt + wall */
+  var c3=v[2],rx=118-9*c.taAct,ry=19,bc=c3.L(10,0);
+  var belt='translate('+r1(bc.x)+' '+r1(bc.y)+') rotate('+(c3.ang/deg).toFixed(2)+')';
+  var taCol=mix('#d39a86',COL.accent,c.taAct),taW=(7+3.5*c.taAct).toFixed(2);
+  this.gTaBack.setAttribute('transform',belt);this.gTaFront.setAttribute('transform',belt);
+  var taDim=(1-.65*Math.max(c.hlDisc,c.signal,c.curveMark)).toFixed(3);this.gTaBack.setAttribute('opacity',taDim);this.gTaFront.setAttribute('opacity',taDim);this.taWall.setAttribute('opacity',(taDim*.75).toFixed(3));
+  sa(this.taBack,{d:'M'+r1(-rx)+',0 A'+r1(rx)+' '+ry+' 0 0 1 '+r1(rx)+',0',stroke:taCol,'stroke-width':taW});
+  var fd='M'+r1(rx)+',0 A'+r1(rx)+' '+ry+' 0 0 1 '+r1(-rx)+',0';
+  sa(this.taFront,{d:fd,stroke:taCol,'stroke-width':taW});
+  sa(this.taGlow,{d:fd,opacity:(c.taAct*(0.5+0.4*pulse)).toFixed(3)});
+  var bul=10*tf*(1-c.taAct)-5*c.taAct;
+  var wc=[T[0].L(108,0),v[4].L(110+bul*.6,0),v[3].L(113+bul,0),v[2].L(115+bul,0),v[1].L(113+bul,0),v[0].L(107+bul*.7,0),pel(64,-46),pel(60,0),pel(56,30)];
+  sa(this.taWall,{d:band(wc,[3,5,6,6,6,6,5,4,3]),fill:taCol});
+  var beltFront=c3.L(10+rx,0);
+  /* silhouette */
+  var sil=[T[1].L(-110,-90),T[1].L(-110,0),v[4].L(-107,0),v[2].L(-103,0),v[0].L(-110,0),pel(-128,-94),pel(-153,-42),pel(-156,10),lerpP(pel(-142,52),F(-126,64),.5),F(-92,118),F(-68,170),F(-62,250),F(66,250),F(66,170),F(70,100),pel(78,12),pel(72,-46),
+    v[0].L(124+bul*.7,0),v[2].L(130+bul,0),v[4].L(124+bul*.6,0),T[0].L(120,0),T[1].L(122,-90)];
+  this.sil.setAttribute('d',smooth(sil,true));
+  /* plumb */
+  var asis=pel(55,-80),pub=pel(56,38);
+  this.gPl.setAttribute('opacity',c.plumb.toFixed(3));
+  if(c.plumb>0.01){
+    var pcol=tilt>2.5?COL.tightS:COL.accentS;
+    this.plV.setAttribute('d','M'+ps(pub)+'L'+r1(pub.x)+','+r1(asis.y-14));
+    sa(this.plL,{d:'M'+ps(add(pub,mul(unit(sub(pub,asis)),8)))+'L'+ps(add(asis,mul(unit(sub(asis,pub)),14))),stroke:pcol});
+    var rr=46,ang1=-90*deg,ang2=(-90+tilt)*deg;
+    var q1={x:pub.x+rr*Math.cos(ang1),y:pub.y+rr*Math.sin(ang1)},q2={x:pub.x+rr*Math.cos(ang2),y:pub.y+rr*Math.sin(ang2)};
+    sa(this.plA,{d:tilt>1?'M'+ps(q1)+'A'+rr+' '+rr+' 0 0 1 '+ps(q2):'',stroke:pcol});
+    sa(this.plT,{x:r1(pub.x+14),y:r1(pub.y+30),fill:pcol});
+    this.plT.textContent=tilt<1.5?'中立 ≈0°':'前倾 ≈'+Math.round(tilt)+'°';
+  }
+  /* curve mark */
+  this.gCv.setAttribute('opacity',c.curveMark.toFixed(3));
+  if(c.curveMark>0.01){
+    var gv=G0.verts;
+    var cv=[G0.s1c].concat(gv.map(function(x){return x.c;}),[gv[4].L(0,-BODY/2-4)]);
+    var cc=[Gm.s1c].concat(v.map(function(x){return x.c;}),[v[4].L(0,-BODY/2-4)]);
+    var off=function(arr,vs,o){return arr.map(function(q,ii){var w=vs[clamp(ii-1,0,4)];return add(q,mul(w.a,o));});};
+    this.cvGhost.setAttribute('d',smooth(off(cv,gv,30),false));
+    this.cvCur.setAttribute('d',smooth(off(cc,v,30),false));
+    var tp=v[3].L(54,-4);sa(this.cvT,{x:r1(tp.x),y:r1(tp.y)});sa(this.cvT2,{x:r1(tp.x),y:r1(tp.y+17)});
+  }
+  /* arrows */
+  function arr(e,o,a,b){e.setAttribute('opacity',o.toFixed(3));if(o>0.01)e.setAttribute('d','M'+ps(a)+'L'+ps(b));}
+  function arcP(cx,cy,r,a1,a2,sw){var p1={x:cx+r*Math.cos(a1*deg),y:cy+r*Math.sin(a1*deg)},p2={x:cx+r*Math.cos(a2*deg),y:cy+r*Math.sin(a2*deg)};return'M'+ps(p1)+'A'+r+' '+r+' 0 0 '+sw+' '+ps(p2);}
+  arr(this.aIp1,c.arIp,v[2].L(50,4),pel(64,-60));
+  var rA=sub(asis,H),dA=unit({x:-rA.y,y:rA.x}),sA=add(asis,mul(unit(rA),14));
+  arr(this.aIp2,c.arIp,sA,add(sA,mul(dA,36)));
+  this.aTilt.setAttribute('opacity',c.arTilt.toFixed(3));if(c.arTilt>0.01)this.aTilt.setAttribute('d',arcP(H.x,H.y,112,-58,6,1));
+  var u1=v[1].up;
+  arr(this.aComp[0],c.arComp,v[2].L(-52,0),v[1].L(-52,-12));
+  arr(this.aComp[1],c.arComp,v[0].L(-52,66),v[0].L(-52,36));
+  arr(this.aComp[2],0,v[0].c,v[0].c);arr(this.aComp[3],0,v[0].c,v[0].c);
+  var rc=v[0].L(-42,-4);
+  sa(this.compRing,{cx:r1(rc.x),cy:r1(rc.y),rx:'20',ry:'44',transform:'rotate('+(v[0].ang/deg).toFixed(2)+' '+r1(rc.x)+' '+r1(rc.y)+')',opacity:(c.arComp*(0.6+0.4*pulse)).toFixed(3)});
+  arr(this.aEs[0],c.arEs,T[0].L(-124,-10),v[3].L(-124,0));
+  arr(this.aEs[1],c.arEs,pel(-140,-104),v[1].L(-126,8));
+  var gs=pel(-162,-58);arr(this.aGl,c.arGlute,gs,add(gs,mul(unit(sub(F(-110,80),gs)),56)));
+  this.aPost.setAttribute('opacity',c.arPost.toFixed(3));if(c.arPost>0.01)this.aPost.setAttribute('d',arcP(H.x,H.y,112,6,-58,0));
+  arr(this.aTa[0],c.arTa,c3.L(10+rx+40,0),c3.L(10+rx+12,0));
+  arr(this.aTa[1],c.arTa,c3.L(10-rx-40,0),c3.L(10-rx-12,0));
+  /* pain */
+  var pcen=v[1].L(-62,18);
+  sa(this.painGlow,{cx:r1(pcen.x),cy:r1(pcen.y),r:r1(58+8*pulse*c.pain),opacity:(c.pain*(0.55+0.45*pulse)).toFixed(3)});
+  var bp=v[1].L(-120,40),bo=clamp((c.pain-.25)/.5,0,1);
+  sa(this.gBadge,{transform:'translate('+r1(bp.x)+' '+r1(bp.y)+')',opacity:bo.toFixed(3)});
+  var ph=RM?0.4:((t*0.9)%1);
+  sa(this.badgeRing,{r:r1(18+16*ph),opacity:(RM?0.5:(1-ph)).toFixed(3)});
+  /* signal */
+  var sp=[v[1].L(-38,21),v[1].L(-30,0),v[2].L(-30,0),v[3].L(-30,0),v[4].L(-30,0),T[0].L(-30,0),T[1].L(-30,0),T[1].L(-30,-30)];
+  var bx=clamp(T[1].L(-30,-30).x,150,390),brainP={x:bx,y:30};sp.push({x:bx,y:46});
+  this.sigPath.setAttribute('d','M'+sp.map(ps).join('L'));this.sigPath.setAttribute('opacity',(c.signal*.6).toFixed(3));
+  sa(this.gBrain,{transform:'translate('+r1(brainP.x)+' '+r1(brainP.y)+')',opacity:c.signal.toFixed(3)});
+  var seg=[],tot=0;for(i=1;i<sp.length;i++){var l=len(sub(sp[i],sp[i-1]));seg.push(l);tot+=l;}
+  for(i=0;i<4;i++){
+    var dd=this.dots[i];
+    if(c.signal<0.01){dd.setAttribute('opacity','0');continue;}
+    var ph2=RM?(i*0.25+0.12):(((t*0.42)+i*0.25)%1),s2=ph2*tot,j=0;
+    while(j<seg.length-1&&s2>seg[j]){s2-=seg[j];j++;}
+    var pp=lerpP(sp[j],sp[j+1],clamp(s2/seg[j],0,1));
+    sa(dd,{cx:r1(pp.x),cy:r1(pp.y),opacity:(c.signal*Math.min(1,ph2*8,(1-ph2)*6)).toFixed(3)});
+  }
+  /* labels */
+  var K={v:v,T:T,pel:pel,gluteC:lerpP(pel(-118,-24),F(-60,76),.32),mfMid:mfMid,beltFront:beltFront,psoasMid:pc[5]};
+  this.lbls.forEach(function(L){
+    var a=L.anchor(K),ls=MQS.matches?1.3:1;
+    if(L.sc!==ls){L.sc=ls;L.tg.setAttribute('transform','translate('+L.tx+' '+L.ly+') scale('+ls+') translate('+(-L.tx)+' '+(-L.ly)+')');}
+    var lx=L.left?L.tx+L.w*ls+6:L.tx-L.w*ls-6;
+    L.line.setAttribute('d','M'+r1(lx)+','+r1(L.ly)+'L'+ps(a));
+    sa(L.dot,{cx:r1(a.x),cy:r1(a.y)});
+    L.pills.forEach(function(pq){pq.g.setAttribute('opacity',clamp((pq.val(c)-.35)/.5,0,1).toFixed(3));});
+  });
+};
+/* ---------- tooltip ---------- */
+var tip=document.getElementById('tip'),tipSticky=false,hovKey=null,hovSvg=null;
+function clearHov(){if(hovSvg){hovSvg.querySelectorAll('.hov').forEach(function(e){e.classList.remove('hov');});}hovKey=null;hovSvg=null;}
+function showTip(key,x,y,svg){
+  var d=TIPS[key];if(!d)return;
+  if(hovKey!==key||hovSvg!==svg){clearHov();hovKey=key;hovSvg=svg;
+    svg.querySelectorAll('[data-tip="'+key+'"]').forEach(function(e){e.classList.add('hov');});}
+  tip.innerHTML='<b>'+d[0]+'</b>'+d[1];
+  tip.classList.add('show');
+  var w=tip.offsetWidth,h=tip.offsetHeight,vw=window.innerWidth,vh=window.innerHeight;
+  var px=x+16,py=y+16;if(px+w>vw-8)px=Math.max(8,x-w-12);if(py+h>vh-8)py=Math.max(8,y-h-12);
+  tip.style.left=px+'px';tip.style.top=py+'px';
+}
+function hideTip(){tip.classList.remove('show');tipSticky=false;clearHov();}
+function wireTips(svg){
+  svg.addEventListener('pointermove',function(e){
+    if(e.pointerType!=='mouse'||tipSticky)return;
+    var t=e.target.closest&&e.target.closest('[data-tip]');
+    if(t)showTip(t.getAttribute('data-tip'),e.clientX,e.clientY,svg);else hideTip();
+  });
+  svg.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'&&!tipSticky)hideTip();});
+  svg.addEventListener('click',function(e){
+    var t=e.target.closest&&e.target.closest('[data-tip]');
+    if(t){showTip(t.getAttribute('data-tip'),e.clientX,e.clientY,svg);tipSticky=true;e.stopPropagation();}
+    else hideTip();
+  });
+}
+document.addEventListener('click',function(){if(tipSticky)hideTip();});
+window.addEventListener('scroll',function(){if(tipSticky)hideTip();},{passive:true});
+
+/* ---------- figures ---------- */
+var ALL_LBL=['es','mf','psis','sacrum','glute','lumbar','ta','ip','asis','hip','femur'];
+var figMain=new Fig(document.getElementById('figMain'),{labels:ALL_LBL});
+var APT={tilt:15,ipTight:1,weak:1,esTense:1,discLoad:.8,pain:1,plumb:1};
+var NEU={plumb:1};
+var figA=new Fig(document.getElementById('figCmpA'),{labels:[],state:APT});
+var figB=new Fig(document.getElementById('figCmpB'),{labels:[],state:APT});
+var figG=new Fig(document.getElementById('figGlute'),{labels:['glute','psis','sacrum','ip','asis','hip'],state:{tilt:15,ipTight:1,weak:1,plumb:1}});
+var figC=new Fig(document.getElementById('figCore'),{labels:['es','mf','lumbar','ta'],state:{tilt:12,weak:1,esTense:.8,ipTight:.6}});
+var FIGS=[figMain,figA,figB,figG,figC];
+FIGS.forEach(function(f){wireTips(f.svg);});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(ents){ents.forEach(function(en){FIGS.forEach(function(f){if(f.svg===en.target)f.visible=en.isIntersecting;});});},{rootMargin:'80px'});
+  FIGS.forEach(function(f){io.observe(f.svg);});
+}
+
+/* ---------- main steps ---------- */
+var STEPS=[
+ {chip:'髋屈肌太紧',title:'髋屈肌（髂腰肌）太紧',text:'久坐时髋关节长时间弯着，髂腰肌一直待在“缩短位”，慢慢变短、变紧。它上连腰椎和骨盆内侧，下连大腿骨，一紧就开始往前下方拽。',
+  s:{tilt:5,lean:.25,ipTight:1,hlIp:1,arIp:1}},
+ {chip:'骨盆前倾',title:'骨盆前倾',text:'紧绷的髂腰肌把骨盆前缘往前下方拉：髂前上棘（ASIS）下沉、髂后上棘（PSIS）上翘，骨盆像一只往前倒水的碗。本该拉住它的臀肌和深层核心偏弱，拉不住。',
+  s:{tilt:15,lean:.6,ipTight:1,weak:1,hlPelvis:1,arTilt:1,arIp:.45,plumb:1}},
+ {chip:'腰曲加大',title:'腰椎前凸加大',text:'骶骨是腰椎的“地基”，骨盆一倾斜，地基也跟着更斜。为了让上半身仍然直立、眼睛平视，腰椎只好弯得更厉害——腰曲变深（虚线是中立时的曲线）。',
+  s:{tilt:15,ipTight:1,weak:1,hlLumbar:1,curveMark:1}},
+ {chip:'椎间盘/小关节受压',title:'椎间盘 / 小关节受压',text:'腰曲加深后，椎骨后方的小关节（关节突关节）被挤得更近，椎间盘后侧的压力也变大，尤其是最下面的 L4–L5、L5–S1 两节。',
+  s:{tilt:15,ipTight:1,weak:1,discLoad:1,hlDisc:1,arComp:1}},
+ {chip:'痛觉信号',title:'痛觉信号',text:'小关节和周围软组织里有丰富的神经末梢。持续挤压会被当作“负荷过大”的警报，沿神经一路传到大脑，被感知为酸、胀、痛。',
+  s:{tilt:15,ipTight:1,weak:1,discLoad:.8,pain:.55,signal:1}},
+ {chip:'竖脊肌代偿',title:'竖脊肌代偿',text:'为了稳住这段过度弯曲、又缺少深层支撑的腰，背部表层的竖脊肌只能长时间绷紧“加班”，像一根一直拉满的弓弦，越来越累。',
+  s:{tilt:15,ipTight:1,weak:1,discLoad:.6,esTense:1,hlEs:1,arEs:1,pain:.35}},
+ {chip:'腰部酸痛',title:'腰部酸痛',text:'关节受压 + 肌肉疲劳叠加，就成了熟悉的腰部酸痛：久坐久站后加重，活动一下或躺下后往往缓解。',
+  s:{tilt:15,ipTight:1,weak:1,discLoad:.7,esTense:1,pain:1},callout:true}
+];
+var STEP_DUR=6.5,step=0,playing=false,stepT=0,started=false;
+function $(id){return document.getElementById(id);}
+var chipsEl=$('chips');
+STEPS.forEach(function(st,i){
+  var li=document.createElement('li');var b=document.createElement('button');
+  b.className='chip'+(i===6?' painchip':'');b.innerHTML='<b>'+(i+1)+'</b>'+st.chip;
+  b.addEventListener('click',function(){started=true;go(i);});li.appendChild(b);chipsEl.appendChild(li);
+});
+var PLAY_ICO='<svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 2.5v11l9.5-5.5z" fill="currentColor"/></svg>';
+var PAUSE_ICO='<svg viewBox="0 0 16 16" width="16" height="16"><rect x="3.5" y="2.5" width="3.2" height="11" rx="1" fill="currentColor"/><rect x="9.3" y="2.5" width="3.2" height="11" rx="1" fill="currentColor"/></svg>';
+function ui(){
+  var st=STEPS[step];
+  $('stepNo').textContent='第 '+(step+1)+' / '+STEPS.length+' 步';
+  $('capTitle').textContent=(step+1)+'. '+st.title;$('capText').textContent=st.text;
+  var cap=$('cap');cap.classList.remove('fade');void cap.offsetWidth;cap.classList.add('fade');
+  $('callout').classList.toggle('show',!!st.callout);
+  chipsEl.querySelectorAll('.chip').forEach(function(b,i){b.classList.toggle('active',i===step);b.classList.toggle('done',i<step);if(i===step)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
+  playBtn();
+}
+function ended(){return step===STEPS.length-1&&stepT>=STEP_DUR;}
+function playBtn(){$('playIco').innerHTML=playing?PAUSE_ICO:PLAY_ICO;$('playTxt').textContent=playing?'暂停':(ended()?'从头播放':'播放');}
+function go(i){step=clamp(i,0,STEPS.length-1);stepT=0;figMain.setTarget(STEPS[step].s,1.5);ui();}
+function replay(){started=true;figMain.snap({});step=0;stepT=0;playing=true;figMain.setTarget(STEPS[0].s,1.5);ui();}
+$('bPrev').addEventListener('click',function(){started=true;go(step-1);});
+$('bNext').addEventListener('click',function(){started=true;go(step+1);});
+$('bPlay').addEventListener('click',function(){started=true;if(!playing&&ended()){replay();return;}playing=!playing;playBtn();});
+$('bReplay').addEventListener('click',replay);
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){hideTip();return;}
+  if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||(e.key!=='ArrowRight'&&e.key!=='ArrowLeft'))return;
+  var ch=$('chain'),a=document.activeElement;
+  if(a&&a!==document.body&&a!==$('main')&&!ch.contains(a))return;
+  var r=ch.getBoundingClientRect();if(r.bottom<0||r.top>window.innerHeight)return;
+  started=true;go(step+(e.key==='ArrowRight'?1:-1));
+});
+go(0);
+
+/* ---------- compare ---------- */
+var mq=window.matchMedia('(max-width: 760px)'),cmpSel='b';
+var cmpGrid=$('cmpGrid'),cmpBtns=document.querySelectorAll('.cmpseg button');
+function applyCmp(animate){
+  cmpGrid.setAttribute('data-show',cmpSel);
+  cmpBtns.forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-v')===cmpSel?'true':'false');});
+  var isB=mq.matches&&cmpSel==='b',target=isB?APT:NEU;
+  if(animate)figA.setTarget(target,1.2);else figA.snap(target);
+  figA.svg.setAttribute('aria-label',isB?'骨盆前倾伴腰痛示意图':'中立骨盆示意图');
+}
+cmpBtns.forEach(function(b){b.addEventListener('click',function(){cmpSel=b.getAttribute('data-v');applyCmp(true);});});
+if(mq.addEventListener)mq.addEventListener('change',function(){applyCmp(false);});else if(mq.addListener)mq.addListener(function(){applyCmp(false);});
+applyCmp(false);
+
+/* ---------- mini demos ---------- */
+function Demo(fig,segSel,autoBtn,stateEl,states,texts){
+  var self=this;this.fig=fig;this.on=false;this.auto=!RM;this.t=0;
+  this.btns=document.querySelectorAll(segSel+' button');this.autoBtn=autoBtn;this.stateEl=stateEl;this.states=states;this.texts=texts;
+  this.btns.forEach(function(b){b.addEventListener('click',function(){self.auto=false;self.set(b.getAttribute('data-v')==='on');self.ab();});});
+  autoBtn.addEventListener('click',function(){self.auto=!self.auto;self.t=0;self.ab();});
+  this.set(false,true);this.ab();
+}
+Demo.prototype.set=function(on,instant){
+  this.on=on;this.t=0;
+  if(instant)this.fig.snap(on?this.states[1]:this.states[0]);else this.fig.setTarget(on?this.states[1]:this.states[0],1.4);
+  this.btns.forEach(function(b){b.setAttribute('aria-pressed',(b.getAttribute('data-v')==='on')===on?'true':'false');});
+  this.stateEl.innerHTML=this.texts[on?1:0];
+};
+Demo.prototype.ab=function(){this.autoBtn.textContent=this.auto?'暂停演示':'自动演示';};
+Demo.prototype.tick=function(dt){if(!this.auto||!this.fig.visible)return;this.t+=dt;if(this.t>3.8)this.set(!this.on);};
+var demoG=new Demo(figG,'#glute .seg',$('gAuto'),$('gState'),
+  [{tilt:15,ipTight:1,weak:1,plumb:1,arIp:.8},{tilt:0,ipTight:.25,gluteAct:1,hlGlute:1,arGlute:1,arPost:1,plumb:1}],
+  ['<span style="color:#c47812">臀肌放松：髂腰肌占上风，骨盆前倾。</span>','<span style="color:#147a6c">臀肌发力：把骨盆后方往下拉（后倾），骨盆回到中立。</span>']);
+var demoC=new Demo(figC,'#core .seg',$('cAuto'),$('cState'),
+  [{tilt:12,weak:1,esTense:.8,ipTight:.6},{tilt:4,taAct:1,mfAct:1,arTa:1,esTense:0,ipTight:.4}],
+  ['<span style="color:#b4232a">核心松弛：腰椎缺少内层支撑，竖脊肌被迫硬扛。</span>','<span style="color:#147a6c">核心激活：腹横肌收紧、多裂肌逐节扣住，竖脊肌放松。</span>']);
+
+if('IntersectionObserver' in window&&!RM){
+  var io2=new IntersectionObserver(function(ents){ents.forEach(function(en){if(en.isIntersecting&&!started){started=true;playing=true;stepT=0;playBtn();}});},{threshold:.35});
+  io2.observe($('figMain'));
+}
+
+/* ---------- breathing: tooltips ---------- */
+TIPS.dia=['横膈膜','最主要的吸气肌，像圆顶盖在胸腔底部；吸气时收缩变平、往骨盆方向下移。'];
+TIPS.pf=['盆底肌','深层核心圆柱的“底”；吸气时随横膈膜轻轻下沉，呼气时回弹上提。'];
+TIPS.ribs=['胸廓（肋骨）','保护心肺；正确吸气时下肋向两侧和后方扩张，呼气时下肋下沉、向内收拢。'];
+TIPS.scal=['肩 / 斜角肌','颈部两侧的辅助呼吸肌；胸式呼吸时被迫过度工作，耸肩、上胸抬起，肩颈容易紧。'];
+TIPS.lungs=['肺','随胸腔扩大被动充气；横膈膜下移能让肺的下部充分舒展。'];
+TIPS.belly=['腹腔','内脏所在的空间；横膈膜下移把内容物往下、往前推，所以肚子会鼓起。'];
+TIPS.hand=['手的位置','一手放胸口、一手放肚子，用来感受到底是哪里在动。'];
+TIPS.thor=['胸椎','脊柱的胸段，与肋骨相连。'];
+
+/* ---------- breathing figures ---------- */
+var BC={good:'#1f9d8b',bad:'#e08a1e',ex:'#2f7aa8',skin:'#f7eee6',skinS:'#e6d3c4',boneS:'#b3a48c'};
+var BELLY=[[296,180],[320,183],[345,185],[370,186],[395,190],[415,198],[432,210]];
+var CHEST=[[104,224],[126,192],[158,172],[200,165],[245,166],[285,176]];
+var BREST=[[452,200],[478,168],[500,130],[522,110],[544,114],[560,150],[576,210],[584,262],[598,284],[596,292],[546,292],[540,262],[526,200],[512,160],[494,198],[476,250],[458,284],[430,292],[360,292],[290,292],[200,292],[140,291],[108,282]].map(function(q){return{x:q[0],y:q[1]};});
+function interp(arr,x){for(var i=1;i<arr.length;i++){if(x<=arr[i][0]){var a=arr[i-1],c=arr[i];return lerp(a[1],c[1],clamp((x-a[0])/(c[0]-a[0]),0,1));}}return arr[arr.length-1][1];}
+function diaPath(fb){
+  var A={x:292,y:186},P={x:318,y:272},X={x:226+38*fb,y:228};
+  return{X:X,d:'M'+ps(A)+'C'+ps({x:A.x-28+18*fb,y:A.y+6})+' '+ps({x:X.x,y:X.y-30+8*fb})+' '+ps(X)+'C'+ps({x:X.x,y:X.y+26-6*fb})+' '+ps({x:P.x-36+18*fb,y:P.y-4})+' '+ps(P)};
+}
+function BreathFig(svg,mode){
+  var self=this,p=svg.id+'-',s=svg,good=mode==='good';
+  this.svg=svg;this.good=good;this.visible=true;this.inO=.55;this.exO=0;this.lastX=226;
+  var AC=good?BC.good:BC.bad;this.AC=AC;
+  this.R=good?26:-5;this.lk=good?0:14;
+  sa(svg,{viewBox:'0 0 600 330',preserveAspectRatio:'xMidYMid meet'});
+  var defs=el('defs',null,s);
+  var f=el('filter',{id:p+'glow',x:'-50%',y:'-50%',width:'200%',height:'200%'},defs);el('feGaussianBlur',{stdDeviation:'4'},f);
+  var lg=el('linearGradient',{id:p+'bone',x1:'0',y1:'0',x2:'0',y2:'1'},defs);
+  el('stop',{offset:'0','stop-color':'#fbf8f1'},lg);el('stop',{offset:'1','stop-color':'#efe7d8'},lg);
+  var mk={a:AC,ex:BC.ex};
+  for(var k in mk){var m=el('marker',{id:p+'ah-'+k,viewBox:'0 0 10 10',refX:'4',refY:'5',markerWidth:'3.4',markerHeight:'3.4',orient:'auto-start-reverse'},defs);
+    el('path',{d:'M0,0 L10,5 L0,10 L2.6,5 Z',fill:mk[k]},m);}
+  var BONE='url(#'+p+'bone)';
+  el('rect',{x:'8',y:'292',width:'584',height:'9',rx:'4.5',fill:'#e1e9ec',class:'np'},s);
+  el('rect',{x:'28',y:'276',width:'84',height:'16',rx:'8',fill:'#e9eff1',stroke:'#d3dde1',class:'np'},s);
+  this.sil=el('path',{fill:BC.skin,stroke:BC.skinS,'stroke-width':'2',class:'np'},s);
+  el('ellipse',{cx:'68',cy:'250',rx:'33',ry:'29',fill:BC.skin,stroke:BC.skinS,'stroke-width':'2',class:'np'},s);
+  el('path',{d:'M50,224 Q56,209 66,221',fill:BC.skin,stroke:BC.skinS,'stroke-width':'2',class:'np'},s);
+  el('path',{d:'M446,250 L516,130',stroke:'#ece2d3','stroke-width':'13','stroke-linecap':'round',class:'np'},s);
+  el('path',{d:'M524,128 L562,268',stroke:'#ece2d3','stroke-width':'10','stroke-linecap':'round',class:'np'},s);
+  /* faint arms (behind anatomy) */
+  this.arm2=el('path',{fill:'none',stroke:'#e2c9b8','stroke-width':'11','stroke-linecap':'round','stroke-linejoin':'round',opacity:'.5',class:'np'},s);
+  this.arm1=el('path',{fill:'none',stroke:'#e2c9b8','stroke-width':'12','stroke-linecap':'round','stroke-linejoin':'round',opacity:'.6',class:'np'},s);
+  /* abdomen + chest group */
+  this.abd=el('path',{fill:'#f6e1d6','data-tip':'belly',opacity:'.88'},s);
+  this.gChest=el('g',null,s);
+  this.lungs=el('path',{fill:'#dcebf5',stroke:'#b9d3e6','stroke-width':'1.2','data-tip':'lungs'},this.gChest);
+  var gR=el('g',{'data-tip':'ribs'},this.gChest);
+  el('path',{d:'M136,280 C122,240 128,196 160,176 C190,164 250,162 282,172 C298,182 308,205 312,232 C314,252 312,268 306,282 Z',fill:BONE,'fill-opacity':'.35',stroke:BC.boneS,'stroke-width':'1.8'},gR);
+  [[150,280,176,176],[172,280,200,170],[194,280,226,168],[216,280,252,169],[238,281,276,174],[260,281,296,188],[282,281,306,214]].forEach(function(r){
+    el('path',{d:'M'+r[0]+','+r[1]+' C'+(r[0]-12)+',240 '+(r[2]-26)+','+(r[3]+8)+' '+r[2]+','+r[3],fill:'none',stroke:'#cbbda6','stroke-width':'4','stroke-linecap':'round',opacity:'.75'},gR);
+  });
+  el('path',{d:'M166,171 Q225,160 284,173',fill:'none',stroke:BC.boneS,'stroke-width':'5','stroke-linecap':'round'},gR);
+  /* spine */
+  var gSp=el('g',null,s),i,g;
+  for(i=0;i<8;i++){var x=146+i*19;g=el('g',{'data-tip':'thor',opacity:'.75'},gSp);
+    el('rect',{x:x-7.5,y:'262',width:'15',height:'12',rx:'3',fill:BONE,stroke:BC.boneS,'stroke-width':'1.3'},g);
+    el('path',{d:'M'+(x-3)+',274 L'+x+',283 L'+(x+3)+',274Z',fill:BONE,stroke:BC.boneS,'stroke-width':'1.2'},g);}
+  for(i=0;i<5;i++){var lx=302+i*21,ly=259-5*Math.sin(Math.PI*(i+.5)/5);g=el('g',{'data-tip':'L'+(i+1)},gSp);
+    if(i<4)el('rect',{x:lx+9,y:ly-6,width:'3',height:'11',rx:'1',fill:'#a9d0e8'},g);
+    el('rect',{x:lx-9,y:ly-8,width:'18',height:'15',rx:'3.5',fill:BONE,stroke:BC.boneS,'stroke-width':'1.4'},g);
+    el('path',{d:'M'+(lx-4)+','+(ly+7)+' L'+(lx-1)+','+(ly+20)+' L'+(lx+4)+','+(ly+7)+'Z',fill:BONE,stroke:BC.boneS,'stroke-width':'1.2'},g);
+    var tt=el('text',{x:lx,y:ly+3,'text-anchor':'middle','font-size':'7.5','font-weight':'700',fill:'#9a8a70',class:'np'},g);tt.textContent='L'+(i+1);}
+  var gP=el('g',{'data-tip':'pelvis'},s);
+  el('path',{d:'M398,262 C394,236 404,212 428,205 C441,213 449,231 453,248 C457,268 449,284 433,289 L410,286 Z',fill:BONE,stroke:BC.boneS,'stroke-width':'1.8'},gP);
+  el('path',{d:'M398,256 L414,252 L440,284 L428,289 Z',fill:'#efe5d3',stroke:BC.boneS,'stroke-width':'1.4'},gP);
+  el('circle',{cx:'446',cy:'250',r:'11',fill:'#efe5d3',stroke:BC.boneS,'stroke-width':'1.6'},gP);
+  /* multifidus */
+  for(i=0;i<5;i++){var mx=302+i*21;el('path',{d:'M'+(mx+8)+',277 Q'+(mx-2)+',285 '+(mx-14)+',280',fill:'none',stroke:'#c27e69','stroke-width':'4.5','stroke-linecap':'round','data-tip':'mf'},s);}
+  /* diaphragm, TA, pelvic floor */
+  this.diaG=el('path',{fill:'none',stroke:AC,'stroke-width':'14',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},s);
+  this.dia=el('path',{fill:'none','stroke-width':'7','stroke-linecap':'round','data-tip':'dia'},s);
+  this.taG=el('path',{fill:'none',stroke:BC.good,'stroke-width':'8',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},s);
+  this.ta=el('path',{'data-tip':'ta'},s);
+  this.pfG=el('path',{fill:'none',stroke:BC.good,'stroke-width':'10',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},s);
+  this.pf=el('path',{fill:'none','stroke-width':'6','stroke-linecap':'round','data-tip':'pf'},s);
+  /* scalenes + shoulder */
+  this.scal=el('path',{'data-tip':'scal'},s);
+  this.sh=el('circle',{r:'11','data-tip':'scal',fill:'#efe5d3',stroke:BC.boneS,'stroke-width':'1.6'},s);
+  /* hands */
+  this.h2=el('ellipse',{rx:'19',ry:'7.5',fill:'#f3dccd',stroke:'#c99f88','stroke-width':'1.6','data-tip':'hand'},s);
+  this.h1=el('ellipse',{rx:'19',ry:'7.5',fill:'#f3dccd',stroke:'#c99f88','stroke-width':'1.6','data-tip':'hand'},s);
+  this.ht1=el('text',{'text-anchor':'middle','font-size':'10','font-weight':'700',fill:'#a7755c',class:'np'},s);this.ht1.textContent='手';
+  this.ht2=el('text',{'text-anchor':'middle','font-size':'10','font-weight':'700',fill:'#a7755c',class:'np'},s);this.ht2.textContent='手';
+  /* ghosts (max inhale) */
+  var gh=el('g',{class:'np',opacity:'.55'},s);
+  var gs={fill:'none',stroke:AC,'stroke-width':'2','stroke-dasharray':'5 5'};
+  if(good){
+    el('path',Object.assign({d:smooth(BELLY.map(function(q){return{x:q[0],y:q[1]-26*Math.exp(-Math.pow((q[0]-360)/45,2))};}),false)},gs),gh);
+    el('path',Object.assign({d:diaPath(1).d},gs),gh);
+  }else{
+    el('path',Object.assign({d:smooth(CHEST.map(function(q){return{x:q[0],y:q[1]-14*clamp((305-q[0])/165,0,1)};}),false)},gs),gh);
+  }
+  /* arrows + arrow texts */
+  var ga=el('g',{class:'np'},s);
+  function A(c){return el('path',{fill:'none',stroke:c==='ex'?BC.ex:AC,'stroke-width':'4','stroke-linecap':'round','marker-end':'url(#'+p+'ah-'+c+')',opacity:'0',class:'flow'},ga);}
+  function T(c,anchor){return el('text',{class:'at','text-anchor':anchor||'start',fill:c==='ex'?BC.ex:(good?'#147a6c':'#b86a0c'),opacity:'0'},ga);}
+  this.aI=[A('a'),A('a')];this.aE=[A('ex'),A('ex')];
+  this.tI=[T('a'),T('a','end')];this.tE=[T('ex'),T('ex','end')];
+  if(good){this.tI[0].textContent='横膈膜下移';this.tI[1].textContent='肚子鼓起';this.tE[0].textContent='横膈膜回升';this.tE[1].textContent='肚子回落';}
+  else{this.tI[0].textContent='上胸抬起';this.tI[1].textContent='耸肩';this.tE[0].textContent='上胸落下';this.tE[1].textContent='';
+    this.tI[1].setAttribute('text-anchor','end');
+    this.note1=el('text',{class:'at','text-anchor':'start',fill:'#8b989f'},ga);this.note1.textContent='横膈膜几乎不动';
+    this.note2=el('text',{class:'at','text-anchor':'end',fill:'#8b989f'},ga);this.note2.textContent='肚子不鼓';}
+  /* inset: top view of lower ribs */
+  var ins=el('g',{transform:'translate(12,10)','data-tip':'ribs'},s);
+  el('rect',{x:'0',y:'0',width:'138',height:'86',rx:'10',fill:'#fff',opacity:'.92',stroke:'#dfe7ea'},ins);
+  var it=el('text',{x:'10',y:'18',class:'it'},ins);it.textContent=good?'俯视 · 下肋侧后扩张':'俯视 · 下肋几乎不动';
+  this.insE=el('ellipse',{cx:'69',cy:'52',rx:'34',ry:'17',fill:'#f6f1e7',stroke:BC.boneS,'stroke-width':'2'},ins);
+  this.insS=el('circle',{cx:'69',r:'3.5',fill:BC.boneS},ins);
+  this.insA=[];
+  if(good){for(i=0;i<4;i++)this.insA.push(el('path',{fill:'none',stroke:i<2?AC:BC.ex,'stroke-width':'3.2','stroke-linecap':'round','marker-end':'url(#'+p+'ah-'+(i<2?'a':'ex')+')',opacity:'0'},ins));}
+  /* labels */
+  this.gLab=el('g',null,s);this.labs=[];
+  function lab(text,x,y,anchor,tip,af){
+    var lg2=el('g',{'data-tip':tip},self.gLab);
+    var ln=el('path',{class:'leader'},lg2),dot=el('circle',{r:'2.6',class:'ldot'},lg2);
+    var t=el('text',{x:x,y:y,'text-anchor':anchor,class:'bl'},lg2);t.textContent=text;
+    var w=tw(text,13),cx=anchor==='start'?x+w/2:(anchor==='end'?x-w/2:x);
+    self.labs.push({ln:ln,dot:dot,lx:cx,ly:y>300?y-15:y+5,af:af});
+  }
+  lab('胸廓',200,322,'middle','ribs',function(G){return{x:200,y:262};});
+  lab('横膈膜',300,104,'middle','dia',function(G){return{x:G.X.x+1,y:G.X.y-6};});
+  lab('腹横肌',414,122,'middle','ta',function(G){return{x:404,y:G.bellyY(404)+11};});
+  lab('斜角肌·肩',22,194,'start','scal',function(G){return G.SM;});
+  lab('多裂肌',290,322,'middle','mf',function(){return{x:318,y:283};});
+  lab('腰椎',362,322,'middle','lumbar',function(){return{x:365,y:262};});
+  lab('盆底肌',440,322,'middle','pf',function(G){return{x:G.pfC.x-4,y:256};});
+  wireTips(svg);
+  this.render(0,'idle',0);
+}
+BreathFig.prototype.render=function(b,ph,dt){
+  var self=this,good=this.good,R=this.R,lk=this.lk;
+  var tIn=ph==='in'?1:(ph==='idle'?.55:0),tEx=ph==='out'?1:0,k=RM?1:Math.min(1,dt*6);
+  this.inO+=(tIn-this.inO)*k;this.exO+=(tEx-this.exO)*k;
+  function lift(x){return lk*b*clamp((305-x)/165,0,1);}
+  function bellyY(x){return interp(BELLY,x)-R*b*Math.exp(-Math.pow((x-360)/45,2));}
+  function chestY(x){return interp(CHEST,x)-lift(x);}
+  var fb=good?b:b*5/38,D=diaPath(fb),X=D.X;this.lastX=X.x;
+  var pfv=good?b:.15*b,pfC={x:452+8*pfv,y:254};
+  var front=CHEST.map(function(q){return{x:q[0],y:chestY(q[0])};}).concat(BELLY.map(function(q){return{x:q[0],y:bellyY(q[0])};}));
+  this.sil.setAttribute('d',smooth(front.concat(BREST),true));
+  var kk=lk*b/165;
+  this.gChest.setAttribute('transform','matrix(1,'+kk.toFixed(5)+',0,1,0,'+(-kk*305).toFixed(3)+')');
+  this.lungs.setAttribute('d','M142,276 C128,240 134,198 162,182 C195,170 250,170 282,180 L292,186'+D.d.replace(/^M[^C]+/,'')+' L300,282 Z');
+  var inner=[];for(var x=432;x>=296;x-=17)inner.push({x:x,y:bellyY(x)+9});
+  this.abd.setAttribute('d',D.d+' L362,250 L398,252 L446,282 Q'+ps(pfC)+' 430,226 L'+smooth(inner,false).slice(1)+' Z');
+  sa(this.dia,{d:D.d,stroke:good?mix('#c98b7f',BC.good,.55+.45*b):'#c9a597'});
+  sa(this.diaG,{d:D.d,opacity:(good?.2+.5*b:0).toFixed(3)});
+  var tc=[];for(x=300;x<=428;x+=16)tc.push({x:x,y:bellyY(x)+11});
+  var tad=band(tc,tc.map(function(_,i){return(i===0||i===tc.length-1)?3:5.5;}));
+  sa(this.ta,{d:tad,fill:good?mix('#d39a86',BC.good,.35+.65*this.exO):'#d9ab9b'});
+  sa(this.taG,{d:tad,opacity:(good?.75*this.exO:0).toFixed(3)});
+  var pfd='M430,226 Q'+ps(pfC)+' 446,282';
+  sa(this.pf,{d:pfd,stroke:good?mix('#c98b7f',BC.good,.6):'#c98b7f'});
+  sa(this.pfG,{d:pfd,opacity:(good?.25+.35*b:0).toFixed(3)});
+  var bw=good?0:b,S={x:142-9*bw,y:238-3*bw},N={x:98,y:234},R1={x:146,y:198-lift(146)},SM={x:(N.x+R1.x)/2+2,y:(N.y+R1.y)/2+2};
+  sa(this.scal,{d:band([N,SM,R1],[7,9+5*bw,7]),fill:good?'#dba08c':mix('#dba08c','#e5484d',.8*bw),stroke:good?'#b26f5b':mix('#b26f5b','#b4232a',bw),'stroke-width':'1.2'});
+  sa(this.sh,{cx:r1(S.x),cy:r1(S.y)});
+  var H1={x:392,y:bellyY(392)-6},H2={x:200,y:chestY(200)-6};
+  sa(this.h1,{cx:r1(H1.x),cy:r1(H1.y)});sa(this.h2,{cx:r1(H2.x),cy:r1(H2.y)});sa(this.ht1,{x:r1(H1.x),y:r1(H1.y+3.5)});sa(this.ht2,{x:r1(H2.x),y:r1(H2.y+3.5)});
+  this.arm1.setAttribute('d','M'+ps(S)+'L234,284L'+ps({x:H1.x-14,y:H1.y+3}));
+  this.arm2.setAttribute('d','M'+ps(S)+'L190,283L'+ps({x:H2.x-14,y:H2.y+3}));
+  function arr(e,o,a,c){e.setAttribute('opacity',o.toFixed(3));if(o>.01)e.setAttribute('d','M'+ps(a)+'L'+ps(c));}
+  function txt(e,o,x2,y2){sa(e,{x:r1(x2),y:r1(y2),opacity:o.toFixed(3)});}
+  var by=bellyY(362);
+  if(good){
+    arr(this.aI[0],this.inO,{x:X.x+10,y:X.y},{x:X.x+46,y:X.y});
+    arr(this.aI[1],this.inO,{x:362,y:by-8},{x:362,y:by-36});
+    arr(this.aE[0],this.exO,{x:X.x+46,y:X.y},{x:X.x+10,y:X.y});
+    arr(this.aE[1],this.exO,{x:362,y:by-36},{x:362,y:by-8});
+    txt(this.tI[0],this.inO,X.x+52,X.y+5);txt(this.tE[0],this.exO,X.x+52,X.y+5);
+    txt(this.tI[1],this.inO,354,by-18);txt(this.tE[1],this.exO,354,by-18);
+  }else{
+    var cy=chestY(176);
+    arr(this.aI[0],this.inO,{x:176,y:cy-8},{x:176,y:cy-36});
+    arr(this.aI[1],this.inO,{x:128,y:186-bw*4},{x:96,y:172-bw*4});
+    arr(this.aE[0],this.exO,{x:176,y:cy-36},{x:176,y:cy-8});
+    arr(this.aE[1],this.exO*.8,{x:96,y:172},{x:128,y:186});
+    txt(this.tI[0],this.inO,184,cy-14);txt(this.tE[0],this.exO,184,cy-14);
+    txt(this.tI[1],this.inO,90,170-bw*4);
+    var no=Math.max(this.inO,.6);txt(this.note1,no,X.x+14,X.y+5);txt(this.note2,no,354,by-14);
+  }
+  /* inset */
+  var rx=34+(good?9:1)*b,ry=17+1.2*b;
+  sa(this.insE,{rx:r1(rx),ry:r1(ry)});this.insS.setAttribute('cy',r1(52+ry-4));
+  if(good){
+    arr(this.insA[0],this.inO,{x:69-rx-3,y:52},{x:69-rx-15,y:52});arr(this.insA[1],this.inO,{x:69+rx+3,y:52},{x:69+rx+15,y:52});
+    arr(this.insA[2],this.exO,{x:69-rx-16,y:52},{x:69-rx-4,y:52});arr(this.insA[3],this.exO,{x:69+rx+16,y:52},{x:69+rx+4,y:52});
+  }
+  /* labels */
+  var G={X:X,bellyY:bellyY,chestY:chestY,SM:SM,pfC:pfC};
+  this.labs.forEach(function(L){var a=L.af(G);L.ln.setAttribute('d','M'+r1(L.lx)+','+r1(L.ly)+'L'+ps(a));sa(L.dot,{cx:r1(a.x),cy:r1(a.y)});});
+};
+
+/* ---------- breathing timer ---------- */
+var RHY={'46':[['in',4],['out',6]],'44':[['in',4],['out',4]],'478':[['in',4],['hold',7],['out',8]]};
+var PH_TXT={'in':'吸气','hold':'停顿','out':'呼气','idle':'准备','done':'完成'};
+var CUE={'in':'慢慢吸气，让肚子（下面那只手）鼓起，下肋向两侧和后背展开','hold':'轻松停一下，不用憋劲；头晕就改回“吸4·呼6”','out':'慢慢把气吐完，下肋下沉、向内收拢，腹部轻收'};
+var BR={key:'46',seq:RHY['46'],running:false,started:false,done:false,idx:0,t:0,round:0,target:6,b:0,ph:'idle'};
+function brPeriod(){var s=0;BR.seq.forEach(function(q){s+=q[1];});return s;}
+function brTarget(){return Math.max(1,Math.round(60/brPeriod()));}
+function sEase(p){return .5-.5*Math.cos(Math.PI*clamp(p,0,1));}
+function brReset(){BR.running=false;BR.started=false;BR.done=false;BR.idx=0;BR.t=0;BR.round=0;BR.target=brTarget();BR.ph='idle';}
+function brTick(dt){
+  if(BR.running){
+    BR.t+=dt;
+    while(BR.t>=BR.seq[BR.idx][1]){
+      BR.t-=BR.seq[BR.idx][1];BR.idx++;
+      if(BR.idx>=BR.seq.length){BR.idx=0;BR.round++;
+        if(BR.round>=BR.target){BR.running=false;BR.done=true;BR.t=0;break;}}
+    }
+  }
+  if(!BR.started||BR.done){BR.ph='idle';BR.b=RM?0:BR.b+(0-BR.b)*Math.min(1,dt*3);return;}
+  var cur=BR.seq[BR.idx],p=BR.t/cur[1];BR.ph=cur[0];
+  if(cur[0]==='in')BR.b=RM?1:sEase(p);else if(cur[0]==='hold')BR.b=1;else BR.b=RM?0:1-sEase(p);
+}
+var brEls={phase:$('bpPhase'),cue:$('bpCue'),round:$('bpRound'),bar:$('bpBar'),tot:$('bpTot'),num:$('rNum'),prog:$('rProg'),ball:$('rBall'),ico:$('bpIco'),txt:$('bpTxt')};
+var brCache={};
+function setTxt(k,v){if(brCache[k]!==v){brCache[k]=v;brEls[k].textContent=v;}}
+function setCls(e,k,v){if(brCache[k]!==v){brCache[k]=v;e.setAttribute('class',v);}}
+function brUI(){
+  var shown=BR.done?'done':(BR.started?BR.ph:'idle'),cur=BR.seq[BR.idx];
+  setTxt('phase',PH_TXT[shown]);setCls(brEls.phase,'pcls','bp-phase '+shown);
+  var rs=BR.seq.map(function(q){return(q[0]==='in'?'吸气 ':q[0]==='hold'?'停顿 ':'呼气 ')+q[1]+' 秒';}).join('，');
+  setTxt('cue',BR.done?'做得好！可以再来一组，或者每天找个固定时间练 5 分钟。':(BR.started?CUE[BR.ph]+(BR.running?'':'（已暂停）'):'按“开始”，跟着圆圈呼吸：'+rs+'。'));
+  setTxt('num',BR.started&&!BR.done?String(Math.max(1,Math.ceil(cur[1]-BR.t-1e-6))):String(BR.seq[0][1]));
+  setTxt('round',BR.done?'完成 '+BR.target+' 轮 ✓':(BR.started?'第 '+Math.min(BR.round+1,BR.target)+' / '+BR.target+' 轮':'共 '+BR.target+' 轮'));
+  setTxt('tot','约 '+Math.round(BR.target*brPeriod()/6)/10+' 分钟');
+  var el0=0;for(var i=0;i<BR.idx;i++)el0+=BR.seq[i][1];
+  var frac=BR.done?1:(BR.started?(BR.round+(el0+BR.t)/brPeriod())/BR.target:0);
+  var bw=(clamp(frac,0,1)*100).toFixed(1)+'%';if(brCache.bw!==bw){brCache.bw=bw;brEls.bar.style.width=bw;}
+  var pp=BR.started&&!BR.done?BR.t/cur[1]:0;
+  var po=(439.82*(1-pp)).toFixed(1);if(brCache.po!==po){brCache.po=po;brEls.prog.setAttribute('stroke-dashoffset',po);}
+  setCls(brEls.prog,'rcls','rprog '+(BR.started&&!BR.done?BR.ph:'in'));
+  setCls(brEls.ball,'bcls','rball '+(BR.ph==='out'?'out':''));
+  var br2=(30+28*BR.b).toFixed(1);if(brCache.br2!==br2){brCache.br2=br2;brEls.ball.setAttribute('r',br2);}
+  var label=BR.running?'暂停':(BR.started&&!BR.done?'继续':(BR.done?'再来一组':'开始'));
+  if(brCache.btn!==label){brCache.btn=label;brEls.txt.textContent=label;brEls.ico.innerHTML=BR.running?PAUSE_ICO:PLAY_ICO;}
+}
+$('bpStart').addEventListener('click',function(){
+  RF.running=false;
+  if(BR.done)brReset();
+  if(!BR.started){BR.started=true;BR.running=true;}else BR.running=!BR.running;
+});
+$('bpReset').addEventListener('click',function(){brReset();});
+var rhyBtns=document.querySelectorAll('.rhy button');
+rhyBtns.forEach(function(bt){bt.addEventListener('click',function(){
+  BR.key=bt.getAttribute('data-r');BR.seq=RHY[BR.key];brReset();
+  rhyBtns.forEach(function(o){o.setAttribute('aria-pressed',o===bt?'true':'false');});
+});});
+brReset();
+var bfGood=new BreathFig($('bfGood'),'good'),bfBad=new BreathFig($('bfBad'),'bad'),BFIGS=[bfGood,bfBad];
+if('IntersectionObserver' in window){
+  var io3=new IntersectionObserver(function(ents){ents.forEach(function(en){BFIGS.forEach(function(f){if(f.svg===en.target)f.visible=en.isIntersecting;});});},{rootMargin:'80px'});
+  BFIGS.forEach(function(f){io3.observe(f.svg);});
+}
+var brGrid=$('brGrid'),brSeg=document.querySelectorAll('.brseg button');
+brSeg.forEach(function(bt){bt.addEventListener('click',function(){
+  var v=bt.getAttribute('data-v');brGrid.setAttribute('data-show',v);
+  brSeg.forEach(function(o){o.setAttribute('aria-pressed',o===bt?'true':'false');});
+});});
+function breathFrame(rawDt,dt){
+  brTick(rawDt);brUI();
+  BFIGS.forEach(function(f){if(f.visible)f.render(BR.b,BR.started&&!BR.done?BR.ph:'idle',dt);});
+}
+window.__breath={state:function(){return{ph:BR.ph,idx:BR.idx,t:BR.t,b:BR.b,round:BR.round,target:BR.target,running:BR.running,started:BR.started,done:BR.done,num:brEls.num.textContent,phaseTxt:brEls.phase.textContent,goodX:bfGood.lastX,badX:bfBad.lastX};}};
+
+/* ---------- rib flare: tooltips ---------- */
+TIPS.rm=['肋弓 / 下肋','胸廓下缘的肋软骨弓。外翻时向上翻、往前凸；中立时下沉、向内收拢，正对骨盆。'];
+TIPS.obl=['腹斜肌 / 腹横肌','腹壁深层的肌肉：腹斜肌把下肋往下、往内拉向骨盆，腹横肌像腰带环抱腹部。它们不发力时，肋骨容易外翻。'];
+TIPS.rcage=['胸廓','由肋骨、胸骨和胸椎组成；外翻时整体后仰，中立时稳稳叠在骨盆正上方。'];
+TIPS.plane=['朝向线','虚线表示横膈膜（上）和盆底肌（下）的大致朝向：基本平行 = 圆柱对齐；前方张开 = “开口剪刀”，腹内压难以均匀建立。'];
+TIPS.hand2=['手放下肋两侧','拇指在后、四指在前，轻轻包住下肋：吸气时感到它们向两侧和后方撑开，呼气时往下、往内收拢。'];
+TIPS.xsec=['下胸廓横截面','从上往下看下肋的一圈：正确吸气时向两侧和后方 360° 扩张，而不是只往前顶。'];
+
+/* ---------- rib flare figures ---------- */
+var RFC={bad:'#e08a1e',badD:'#b86a0c',good:'#1f9d8b',goodD:'#147a6c',ex:'#2f7aa8'};
+function rrot(p,c,a){var r=a*Math.PI/180,cs=Math.cos(r),sn=Math.sin(r),x=p.x-c.x,y=p.y-c.y;return{x:c.x+x*cs-y*sn,y:c.y+x*sn+y*cs};}
+function Pt(x,y){return{x:x,y:y};}
+function vadd(a,b,k){k=k==null?1:k;return{x:a.x+b.x*k,y:a.y+b.y*k};}
+function bz(a,b,c,d,t){var u=1-t;return{x:u*u*u*a.x+3*u*u*t*b.x+3*u*t*t*c.x+t*t*t*d.x,y:u*u*u*a.y+3*u*u*t*b.y+3*u*t*t*c.y+t*t*t*d.y};}
+function bzd(a,b,c,d,t){var u=1-t;var x=3*u*u*(b.x-a.x)+6*u*t*(c.x-b.x)+3*t*t*(d.x-c.x),y=3*u*u*(b.y-a.y)+6*u*t*(c.y-b.y)+3*t*t*(d.y-c.y),l=Math.hypot(x,y)||1;return{x:x/l,y:y/l};}
+var RPT=Pt(200,200),RHJ=Pt(212,428);
+var TSP=[Pt(163,58),Pt(143,110),Pt(140,200),Pt(170,272)];
+var STN=[Pt(238,66),Pt(266,92),Pt(282,150),Pt(286,214)];
+function RibFig(svg,mode){
+  var self=this,p=svg.id+'-',s=svg;
+  this.svg=svg;this.mode=mode;this.visible=true;
+  this.ft=mode==='bad'?1:0;this.f=this.ft;this.lastF=-1;this.inO=0;this.exO=0;this.b=0;
+  var AC=mode==='bad'?RFC.bad:RFC.good;this.AC=AC;
+  sa(svg,{viewBox:'0 0 420 490',preserveAspectRatio:'xMidYMid meet'});
+  var defs=el('defs',null,s);
+  var f=el('filter',{id:p+'glow',x:'-50%',y:'-50%',width:'200%',height:'200%'},defs);el('feGaussianBlur',{stdDeviation:'4'},f);
+  var lg=el('linearGradient',{id:p+'bone',x1:'0',y1:'0',x2:'0',y2:'1'},defs);
+  el('stop',{offset:'0','stop-color':'#fbf8f1'},lg);el('stop',{offset:'1','stop-color':'#efe7d8'},lg);
+  var mk={a:AC,ex:RFC.ex,bad:RFC.bad};
+  for(var k in mk){var m=el('marker',{id:p+'ah-'+k,viewBox:'0 0 10 10',refX:'4',refY:'5',markerWidth:'3.4',markerHeight:'3.4',orient:'auto-start-reverse'},defs);
+    el('path',{d:'M0,0 L10,5 L0,10 L2.6,5 Z',fill:mk[k]},m);}
+  var BONE='url(#'+p+'bone)';this.BONE=BONE;
+  var d1=el('text',{x:'6',y:'16',class:'dir np'},s);d1.textContent='← 后（背侧）';
+  var d2=el('text',{x:'414',y:'16','text-anchor':'end',class:'dir np'},s);d2.textContent='前（腹侧）→';
+  this.sil=el('path',{fill:'#f7eee6',stroke:'#e6d3c4','stroke-width':'2',class:'np'},s);
+  var cp=el('clipPath',{id:p+'clip'},defs);this.clipP=el('path',null,cp);
+  this.wedge=el('path',{fill:AC,opacity:'.1','data-tip':'plane','clip-path':'url(#'+p+'clip)'},s);
+  el('path',{d:'M212,428 L228,520',stroke:'#e9dfcf','stroke-width':'16','stroke-linecap':'round',class:'np'},s);
+  /* thorax group (rotates) */
+  this.gT=el('g',null,s);
+  this.cage=el('path',{fill:BONE,'fill-opacity':'.45',stroke:'#b3a48c','stroke-width':'1.8','data-tip':'rcage'},this.gT);
+  this.ribs=[];for(var i=0;i<7;i++)this.ribs.push(el('path',{fill:'none',stroke:'#cbbda6','stroke-width':'4','stroke-linecap':'round',opacity:'.8','data-tip':'rcage'},this.gT));
+  el('path',{d:'M'+ps(STN[0])+'C'+ps(STN[1])+' '+ps(STN[2])+' '+ps(STN[3]),fill:'none',stroke:'#b3a48c','stroke-width':'6','stroke-linecap':'round','data-tip':'rcage'},this.gT);
+  for(i=0;i<10;i++){var t=.05+i*.1,c=bz(TSP[0],TSP[1],TSP[2],TSP[3],t),tg=bzd(TSP[0],TSP[1],TSP[2],TSP[3],t),ang=Math.atan2(tg.y,tg.x)*180/Math.PI-90;
+    var gv=el('g',{transform:'translate('+ps(c)+') rotate('+r1(ang)+')','data-tip':'thor',opacity:'.85'},this.gT);
+    el('rect',{x:'-7',y:'-8',width:'15',height:'15',rx:'3',fill:BONE,stroke:'#b3a48c','stroke-width':'1.2'},gv);
+    el('path',{d:'M-7,-2 L-17,6 L-7,5Z',fill:BONE,stroke:'#b3a48c','stroke-width':'1.1'},gv);}
+  this.diaG=el('path',{fill:'none',stroke:AC,'stroke-width':'13',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},this.gT);
+  this.dia=el('path',{fill:'none','stroke-width':'6.5','stroke-linecap':'round','data-tip':'dia'},this.gT);
+  this.rmG=el('path',{fill:'none',stroke:AC,'stroke-width':'14',filter:'url(#'+p+'glow)',opacity:'.55',class:'np'},this.gT);
+  this.rm=el('path',{fill:'none','stroke-width':'6.5','stroke-linecap':'round',stroke:AC,'data-tip':'rm'},this.gT);
+  /* lumbar */
+  this.gL=el('g',{'data-tip':'lumbar'},s);this.lv=[];this.ld=[];
+  for(i=0;i<4;i++)this.ld.push(el('rect',{x:'-9',y:'-1.6',width:'18',height:'3.2',rx:'1.5',fill:'#a9d0e8'},this.gL));
+  for(i=0;i<5;i++){var gl=el('g',null,this.gL);
+    el('rect',{x:'-11',y:'-8',width:'21',height:'15',rx:'3.5',fill:BONE,stroke:'#b3a48c','stroke-width':'1.4'},gl);
+    el('path',{d:'M-11,-3 L-25,4 L-11,5Z',fill:BONE,stroke:'#b3a48c','stroke-width':'1.2'},gl);
+    var tt=el('text',{x:'0',y:'3',transform:'','text-anchor':'middle','font-size':'7.5','font-weight':'700',fill:'#9a8a70',class:'np'},gl);tt.textContent='L'+(i+1);
+    this.lv.push(gl);}
+  /* erector */
+  this.esG=el('path',{fill:RFC.bad,filter:'url(#'+p+'glow)',opacity:'0',class:'np'},s);
+  this.es=el('path',{'data-tip':'es'},s);
+  /* pelvis group (rotates) */
+  this.gP=el('g',null,s);
+  var gpl=el('g',{'data-tip':'pelvis'},this.gP);
+  el('path',{d:'M164,378 C172,350 232,338 258,372 L250,390 Q236,398 234,410 C250,420 262,440 262,456 L250,466 C236,462 226,458 218,470 C206,480 190,476 188,462 C186,446 194,436 186,424 C178,414 166,404 162,392 Z',fill:BONE,stroke:'#b3a48c','stroke-width':'1.8'},gpl);
+  el('ellipse',{cx:'228',cy:'448',rx:'11',ry:'7',fill:'#f7eee6',stroke:'#c9bba3','stroke-width':'1.2'},gpl);
+  el('path',{d:'M180,364 L206,372 C204,392 198,414 190,432 C184,446 182,456 184,466 L176,468 C168,450 164,430 164,410 C164,392 170,374 180,364 Z',fill:'#efe5d3',stroke:'#b3a48c','stroke-width':'1.5'},gpl);
+  el('circle',{cx:'212',cy:'428',r:'13',fill:'#efe5d3',stroke:'#b3a48c','stroke-width':'1.6'},gpl);
+  this.pfG=el('path',{fill:'none',stroke:AC,'stroke-width':'11',filter:'url(#'+p+'glow)',opacity:'0',class:'np'},this.gP);
+  this.pf=el('path',{d:'M256,458 Q218,482 182,464',fill:'none','stroke-width':'5.5','stroke-linecap':'round','data-tip':'pf'},this.gP);
+  /* obliques / TA */
+  this.oblG=el('path',{fill:RFC.good,filter:'url(#'+p+'glow)',opacity:'0',class:'np'},s);
+  this.obl=el('path',{'data-tip':'obl'},s);
+  /* plane lines */
+  var pst={fill:'none','stroke-width':'2.4','stroke-dasharray':'7 5','stroke-linecap':'round','data-tip':'plane'};
+  this.pl1=el('path',Object.assign({stroke:AC},pst),s);this.pl2=el('path',Object.assign({stroke:AC},pst),s);
+  /* hand (breath mode) */
+  if(mode==='breath'){
+    this.hand=el('g',{'data-tip':'hand2',opacity:'.92'},s);
+    el('ellipse',{cx:'0',cy:'0',rx:'21',ry:'8.5',fill:'#f3dccd',stroke:'#c99f88','stroke-width':'1.6'},this.hand);
+    var ht=el('text',{x:'0',y:'3.5','text-anchor':'middle','font-size':'10','font-weight':'700',fill:'#a7755c',class:'np'},this.hand);ht.textContent='手';
+  }
+  /* arrows */
+  var ga=el('g',{class:'np'},s);
+  function A(c){return el('path',{fill:'none',stroke:c==='ex'?RFC.ex:(c==='bad'?RFC.bad:AC),'stroke-width':'4','stroke-linecap':'round','marker-end':'url(#'+p+'ah-'+c+')',opacity:'0',class:'flow'},ga);}
+  this.ar={};
+  if(mode==='bad'){this.ar.rm=A('a');this.ar.pel=A('a');}
+  else if(mode==='good'){this.ar.rm=A('a');}
+  else{this.ar.back=A('a');this.ar.rmE=A('ex');this.ar.bel=A('ex');}
+  /* inset (breath mode): cross-section of lower ribs */
+  if(mode==='breath'){
+    var ins=el('g',{transform:'translate(304,334)','data-tip':'xsec'},s);
+    el('rect',{x:'0',y:'0',width:'110',height:'134',rx:'10',fill:'#fff',opacity:'.94',stroke:'#dfe7ea'},ins);
+    var it=el('text',{x:'55',y:'17','text-anchor':'middle',class:'it'},ins);it.textContent='横截面 · 下肋一圈';
+    var f1=el('text',{x:'55',y:'33','text-anchor':'middle',class:'it'},ins);f1.textContent='前';
+    this.insB=el('text',{x:'55',y:'124','text-anchor':'middle',class:'it'},ins);this.insB.textContent='后';
+    this.insE=el('ellipse',{cx:'55',fill:'#f6f1e7',stroke:'#b3a48c','stroke-width':'2'},ins);
+    this.insS=el('circle',{cx:'55',r:'4',fill:'#b3a48c'},ins);
+    this.insA=[];for(i=0;i<5;i++)this.insA.push(el('path',{fill:'none',stroke:i<3?AC:RFC.ex,'stroke-width':'3','stroke-linecap':'round','marker-end':'url(#'+p+'ah-'+(i<3?'a':'ex')+')',opacity:'0'},ins));
+  }
+  /* labels */
+  this.gLab=el('g',null,s);this.labs=[];
+  function lab(text,x,y,anchor,tip,af,sub){
+    var lg2=el('g',{'data-tip':tip},self.gLab);
+    var ln=null,dot=null;if(af){ln=el('path',{class:'leader'},lg2);dot=el('circle',{r:'2.6',class:'ldot'},lg2);}
+    var t=el('text',{x:x,y:y,'text-anchor':anchor,class:'bl'},lg2);t.textContent=text;
+    var st=null;if(sub){st=el('text',{x:x,y:y+17,'text-anchor':anchor,class:'sl'},lg2);}
+    var w=tw(text,13),lx=anchor==='start'?(x<200?x+w+4:x-4):x;
+    self.labs.push({ln:ln,dot:dot,lx:lx,ly:y-4,af:af,st:st,sub:sub,t:t});
+  }
+  var bad=mode==='bad',br=mode==='breath';
+  function SC(a,b2){return function(F){return F.f>.5?[a,RFC.badD]:[b2,RFC.goodD];};}
+  lab('横膈膜',310,112,'start','dia',function(G){return G.apex;},br?function(F){return F.ph==='in'?['吸：下移',RFC.goodD]:(F.ph==='out'?['呼：回升',RFC.ex]:['','']);}:SC('朝向前上方','朝下，正对盆底'));
+  lab('肋弓 / 下肋',310,176,'start','rm',function(G){return G.rmMid;},br?function(F){return F.ph==='in'?['吸：向侧后打开',RFC.goodD]:(F.ph==='out'?['呼：下沉内收',RFC.ex]:['','']);}:SC('上翻、往前凸','下沉、向内收'));
+  lab('腹斜肌·腹横肌',310,282,'start','obl',function(G){return G.oblMid;},br?function(F){return F.ph==='out'?['呼：轻轻收紧',RFC.ex]:['',''];}:SC('被拉长、不发力','把下肋拉向骨盆'));
+  if(!br){
+    this.sc=el('text',{x:'310',y:'356','text-anchor':'start',class:'bl','data-tip':'plane'},self.gLab);
+    lab('骨盆',310,412,'start','pelvis',function(G){return G.pel;},SC('前倾','中立'));
+    lab('竖脊肌',6,250,'start','es',function(G){return G.esMid;},SC('一直绷着撑','不必硬撑'));
+    lab('腰椎',6,330,'start','lumbar',function(G){return G.lMid;},SC('前凸加深','曲度适中'));
+    lab('盆底肌',6,470,'start','pf',function(G){return G.pfMid;});
+  }else{
+    lab('后背肋骨',6,172,'start','rcage',function(G){return G.backPt;},function(F){return F.ph==='in'?['吸：向后扩张',RFC.goodD]:['',''];});
+    lab('盆底肌',6,470,'start','pf',function(G){return G.pfMid;});
+  }
+  wireTips(svg);
+  this.render(0,'idle',1);
+}
+RibFig.prototype.render=function(b,ph,dt){
+  var self=this,br=this.mode==='breath';
+  if(!br){
+    var k0=RM?1:Math.min(1,dt*3.2);this.f+=(this.ft-this.f)*k0;if(Math.abs(this.ft-this.f)<.002)this.f=this.ft;
+    if(Math.abs(this.f-this.lastF)<1e-4)return;this.lastF=this.f;b=0;ph='idle';
+  }else{
+    var tIn=ph==='in'?1:0,tEx=ph==='out'?1:0,k=RM?1:Math.min(1,dt*6);
+    this.inO+=(tIn-this.inO)*k;this.exO+=(tEx-this.exO)*k;
+  }
+  this.b=b;this.ph=ph;
+  var f=this.f,e=br&&ph!=='idle'?1-b:0,ea=f*f*(3-2*f);
+  var aT=-11*ea,aP=12*ea;
+  function T(p){return rrot(p,RPT,aT);}function Pv(p){return rrot(p,RHJ,aP);}
+  this.gT.setAttribute('transform','rotate('+r1(aT*10)/10+' 200 200)');
+  this.gP.setAttribute('transform','rotate('+r1(aP*10)/10+' 212 428)');
+  /* costal margin (local) */
+  var M0=Pt(286,214),M1=Pt(287+5*ea-3*e,248-5*ea+4*e),M2=Pt(270+8*ea-5*e,272-9*ea+6*e),M3=Pt(240+4*ea-4*e,284-6*ea+6*e);
+  var bk=br?b:0;
+  var B1=Pt(146-7*bk,258),B2=Pt(134-6*bk,200),B3=Pt(140-3*bk,140);
+  this.cage.setAttribute('d','M'+ps(STN[0])+'C'+ps(STN[1])+' '+ps(STN[2])+' '+ps(M0)+'C'+ps(M1)+' '+ps(M2)+' '+ps(M3)+'C220,290 190,290 172,284 C'+ps(B1)+' '+ps(B2)+' '+ps(B3)+' C144,96 154,70 166,62 Z');
+  var rmd='M'+ps(M0)+'C'+ps(M1)+' '+ps(M2)+' '+ps(M3);
+  sa(this.rm,{d:rmd,stroke:br?mix(RFC.good,RFC.ex,this.exO):this.AC});sa(this.rmG,{d:rmd,stroke:br?mix(RFC.good,RFC.ex,this.exO):this.AC,opacity:br?(.25+.35*Math.max(this.inO,this.exO)).toFixed(3):'.5'});
+  for(var i=0;i<7;i++){
+    var sp=bz(TSP[0],TSP[1],TSP[2],TSP[3],.07+.115*i);sp.x+=4;
+    if(br)sp.x-=(i>2?5:2)*bk;
+    var fr=i<5?bz(STN[0],STN[1],STN[2],STN[3],.1+.2*i):bz(M0,M1,M2,M3,i===5?.3:.68);
+    this.ribs[i].setAttribute('d','M'+ps(sp)+'C'+ps(Pt(sp.x+(br&&i>2?-6*bk:0)+16,sp.y-4))+' '+ps(Pt(fr.x-34,fr.y-24))+' '+ps(fr));
+  }
+  /* diaphragm (local) */
+  var Fd=Pt(280-3*e,252+4*e),Bd=Pt(178,262),h=br?(50-15*b):50;
+  var c1=Pt(Bd.x+2,Bd.y-1.25*h),c2=Pt(Fd.x,Fd.y-1.25*h);
+  var dd='M'+ps(Bd)+'C'+ps(c1)+' '+ps(c2)+' '+ps(Fd);
+  var dcol=br?mix('#c98b7f',RFC.good,.3+.6*b):(f>.5?'#c99a7f':mix('#c98b7f',RFC.good,.35));
+  sa(this.dia,{d:dd,stroke:dcol});sa(this.diaG,{d:dd,opacity:(br?.15+.45*b:(1-f)*.35).toFixed(3)});
+  /* lumbar */
+  var T12=T(TSP[3]),d0=bzd(TSP[0],TSP[1],TSP[2],TSP[3],1);d0=rrot(d0,Pt(0,0),aT);
+  var S1=Pv(Pt(193,368)),d3=rrot(Pt(.294,-.956),Pt(0,0),aP),kk=36+8*ea;
+  var L0=vadd(T12,Pt(0,0)),L1=vadd(T12,d0,kk),L2=vadd(S1,d3,kk),L3=S1;
+  var lp=function(t){return bz(L0,L1,L2,L3,t);},ld=function(t){return bzd(L0,L1,L2,L3,t);};
+  for(i=0;i<5;i++){var tt2=.12+.19*i,c=lp(tt2),tg=ld(tt2);this.lv[i].setAttribute('transform','translate('+ps(c)+') rotate('+r1(Math.atan2(tg.y,tg.x)*180/Math.PI-90)+')');}
+  for(i=0;i<4;i++){tt2=.215+.19*i;c=lp(tt2);tg=ld(tt2);this.ld[i].setAttribute('transform','translate('+ps(c)+') rotate('+r1(Math.atan2(tg.y,tg.x)*180/Math.PI-90)+')');}
+  function nb(t,o){var c3=lp(t),g=ld(t);return{x:c3.x-g.y*o,y:c3.y+g.x*o};}
+  /* erector */
+  var ep=[T(Pt(150,206)),T(Pt(153,246))].concat([nb(.2,30),nb(.5,32),nb(.8,30)]).concat([Pv(Pt(160,392))]);
+  var esd=band(ep,[4,7,9+2*ea,10+2*ea,9+2*ea,5]);
+  sa(this.es,{d:esd,fill:br?'#d79a86':mix('#d6a08e','#e2704a',ea),stroke:mix('#b26f5b','#c2410c',ea),'stroke-width':'1'});
+  sa(this.esG,{d:esd,opacity:(br?0:.45*ea).toFixed(3)});
+  /* silhouette */
+  var back=[Pt(168,-20),T(Pt(166,40)),T(Pt(148,66)),T(Pt(126-3*bk,120)),T(Pt(122-7*bk,190)),T(Pt(134-6*bk,250)),nb(.35,44),nb(.75,46),Pv(Pt(150,394)),Pv(Pt(132,428)),Pv(Pt(138,466)),Pt(150,500),Pt(156,540)];
+  var MF=T(Pt(296+5*ea-3*e,238-5*ea+5*e)),AF=Pv(Pt(274,384));
+  var bul=8+14*ea+(br?4*b:0);
+  var belly1=vadd(vadd(MF,Pt((AF.x-MF.x)*.35,(AF.y-MF.y)*.35)),Pt(bul*.85,0)),belly2=vadd(vadd(MF,Pt((AF.x-MF.x)*.7,(AF.y-MF.y)*.7)),Pt(bul*.8,0));
+  var front=[Pt(290,540),Pt(286,494),Pv(Pt(276,462)),Pv(Pt(278,424)),AF,belly2,belly1,MF,T(Pt(296,180)),T(Pt(286,120)),T(Pt(262,74)),T(Pt(236,42)),Pt(232,-20)];
+  var sd=smooth(back.concat(front),true);this.sil.setAttribute('d',sd);this.clipP.setAttribute('d',sd);
+  /* obliques */
+  var o0=T(Pt(276+4*ea-3*e,258-4*ea+5*e)),o3=Pv(Pt(262,384));
+  var oc=[o0,vadd(belly1,Pt(-13,2)),vadd(belly2,Pt(-13,0)),o3];
+  var obd=band(oc,[3,6.5-2*ea,6.5-2*ea,3]);
+  var oCol=br?mix('#d39a86',RFC.good,.3+.7*this.exO):mix(RFC.good,'#dcb5a6',ea);
+  sa(this.obl,{d:obd,fill:oCol,opacity:(1-.3*ea).toFixed(3)});
+  sa(this.oblG,{d:obd,opacity:(br?.6*this.exO:.55*(1-ea)).toFixed(3)});
+  /* pelvic floor */
+  sa(this.pf,{stroke:br?mix('#c98b7f',RFC.good,.6):(f>.5?'#c99a7f':mix('#c98b7f',RFC.good,.7))});
+  sa(this.pfG,{d:'M256,458 Q218,482 182,464',opacity:(br?.15+.25*b:(1-f)*.3).toFixed(3)});
+  /* plane lines + wedge */
+  var sl1=(Fd.y-Bd.y)/(Fd.x-Bd.x),a1=T(Pt(Bd.x-34,Bd.y-34*sl1)),z1=T(Pt(Fd.x+30,Fd.y+30*sl1));
+  var Cc=Pt(182,464),Pp=Pt(256,458),sl2=(Pp.y-Cc.y)/(Pp.x-Cc.x),a2=Pv(Pt(Cc.x-30,Cc.y-30*sl2)),z2=Pv(Pt(Pp.x+44,Pp.y+44*sl2));
+  this.pl1.setAttribute('d','M'+ps(a1)+'L'+ps(z1));this.pl2.setAttribute('d','M'+ps(a2)+'L'+ps(z2));
+  this.wedge.setAttribute('d','M'+ps(a1)+'L'+ps(z1)+'L'+ps(z2)+'L'+ps(a2)+'Z');
+  if(!br){var pc=mix(RFC.good,RFC.bad,ea);[this.pl1,this.pl2].forEach(function(q){q.setAttribute('stroke',pc);});sa(this.wedge,{fill:pc});
+    sa(this.sc,{fill:f>.5?RFC.badD:RFC.goodD});var sct=f>.5?'∠ 开口剪刀':'＝ 平行圆柱';if(this.sc.textContent!==sct)this.sc.textContent=sct;}
+  else{[this.pl1,this.pl2].forEach(function(q){q.setAttribute('opacity','.55');});}
+  /* arrows */
+  function arr(q,o,a,c){q.setAttribute('opacity',o.toFixed(3));if(o>.01)q.setAttribute('d','M'+ps(a)+'L'+ps(c));}
+  var rmTip=T(Pt(M2.x+6,M2.y+2));
+  if(this.mode==='bad'){
+    arr(this.ar.rm,.95*ea,vadd(rmTip,Pt(2,-2)),vadd(rmTip,Pt(16,-26)));
+    var r=Math.hypot(276-212,356-428),pA=rrot(Pt(276,356),RHJ,aP-16),pB=rrot(Pt(276,356),RHJ,aP-1);
+    this.ar.pel.setAttribute('opacity',(.95*ea).toFixed(3));this.ar.pel.setAttribute('d','M'+ps(vadd(pA,Pt(8,-4)))+'A'+r1(r)+','+r1(r)+' 0 0 1 '+ps(vadd(pB,Pt(8,-4))));
+  }else if(this.mode==='good'){
+    arr(this.ar.rm,.95*(1-ea),vadd(rmTip,Pt(8,-20)),vadd(rmTip,Pt(-4,6)));
+  }else{
+    var bp=T(Pt(118,214));
+    arr(this.ar.back,this.inO,vadd(bp,Pt(-2,0)),vadd(bp,Pt(-30,0)));
+    arr(this.ar.rmE,this.exO,vadd(rmTip,Pt(12,-16)),vadd(rmTip,Pt(0,8)));
+    var bm=vadd(belly2,Pt(18,0));arr(this.ar.bel,this.exO,bm,vadd(bm,Pt(-16,0)));
+    var hp=T(Pt(236-2*e,236+4*e));this.hand.setAttribute('transform','translate('+ps(hp)+') rotate(-24)');
+    var rx=36+9*b,ry=22+5*b,cy=40+ry;
+    sa(this.insE,{rx:r1(rx),ry:r1(ry),cy:r1(cy)});this.insS.setAttribute('cy',r1(cy+ry-6));
+    arr(this.insA[0],this.inO,{x:55-rx-2,y:cy},{x:55-rx-12,y:cy});arr(this.insA[1],this.inO,{x:55+rx+2,y:cy},{x:55+rx+12,y:cy});
+    arr(this.insA[2],this.inO,{x:55,y:cy+ry+2},{x:55,y:cy+ry+12});
+    arr(this.insA[3],this.exO,{x:55-rx-14,y:cy},{x:55-rx-3,y:cy});arr(this.insA[4],this.exO,{x:55+rx+14,y:cy},{x:55+rx+3,y:cy});
+  }
+  /* labels */
+  var dm=bz(Bd,c1,c2,Fd,.5);
+  var G={apex:T(Pt(dm.x,dm.y+4)),rmMid:T(bz(M0,M1,M2,M3,.45)),oblMid:vadd(belly1,Pt(-13,6)),pel:Pv(Pt(232,372)),esMid:nb(.45,32),lMid:lp(.5),pfMid:Pv(Pt(219,472)),backPt:T(Pt(132-6*bk,200))};
+  this.labs.forEach(function(L){
+    if(L.af){var a=L.af(G);L.ln.setAttribute('d','M'+r1(L.lx)+','+r1(L.ly)+'L'+ps(a));sa(L.dot,{cx:r1(a.x),cy:r1(a.y)});}
+    if(L.sub){var sv=L.sub(self);if(L.st.textContent!==sv[0])L.st.textContent=sv[0];L.st.setAttribute('fill',sv[1]);}
+  });
+};
+
+/* ---------- rib flare: follow-along timer (吸 4 / 呼 6) ---------- */
+var RF={seq:[['in',4],['out',6]],running:false,started:false,done:false,idx:0,t:0,round:0,target:6,b:0,ph:'idle'};
+var RF_CUE={'in':'吸气：肋骨向两侧和后背 360° 扩张——前胸不上提，肋弓不往前翻','out':'呼气：慢慢把气吐完，下肋下沉、向内收拢，腹部轻收'};
+function rfReset(){RF.running=false;RF.started=false;RF.done=false;RF.idx=0;RF.t=0;RF.round=0;RF.ph='idle';}
+function rfTick(dt){
+  if(RF.running){RF.t+=dt;
+    while(RF.t>=RF.seq[RF.idx][1]){RF.t-=RF.seq[RF.idx][1];RF.idx++;
+      if(RF.idx>=RF.seq.length){RF.idx=0;RF.round++;if(RF.round>=RF.target){RF.running=false;RF.done=true;RF.t=0;break;}}}}
+  if(!RF.started||RF.done){RF.ph='idle';RF.b=RM?0:RF.b+(0-RF.b)*Math.min(1,dt*3);return;}
+  var cur=RF.seq[RF.idx],pp=RF.t/cur[1];RF.ph=cur[0];
+  RF.b=cur[0]==='in'?(RM?1:sEase(pp)):(RM?0:1-sEase(pp));
+}
+var rfEls={phase:$('rfPhase'),num:$('rfNum'),cue:$('rfCue'),bar:$('rfBar'),round:$('rfRound'),ico:$('rfIco'),txt:$('rfTxt')},rfCache={};
+function rfSet(k,v){if(rfCache[k]!==v){rfCache[k]=v;rfEls[k].textContent=v;}}
+function rfUI(){
+  var shown=RF.done?'done':(RF.started?RF.ph:'idle'),cur=RF.seq[RF.idx];
+  rfSet('phase',PH_TXT[shown]);if(rfCache.pc!==shown){rfCache.pc=shown;rfEls.phase.className='bp-phase '+shown;rfEls.bar.className=RF.ph==='out'?'out':'';}
+  rfSet('num',RF.started&&!RF.done?String(Math.max(1,Math.ceil(cur[1]-RF.t-1e-6))):(RF.done?'✓':'4'));
+  rfSet('cue',RF.done?'完成 6 轮！可以休息一下再来一组。':(RF.started?RF_CUE[RF.ph]+(RF.running?'':'（已暂停）'):'建议用 90/90 仰卧，双手放在下肋两侧；按“开始”跟练。'));
+  rfSet('round',RF.done?'完成 6 轮 ✓':(RF.started?'第 '+Math.min(RF.round+1,RF.target)+' / '+RF.target+' 轮':'共 6 轮 · 约 1 分钟'));
+  var rw=(RF.started&&!RF.done?clamp(RF.t/cur[1],0,1)*100:(RF.done?100:0)).toFixed(1)+'%';if(rfCache.rw!==rw){rfCache.rw=rw;rfEls.bar.style.width=rw;}
+  var label=RF.running?'暂停':(RF.started&&!RF.done?'继续':(RF.done?'再来一组':'开始'));
+  if(rfCache.btn!==label){rfCache.btn=label;rfEls.txt.textContent=label;rfEls.ico.innerHTML=RF.running?PAUSE_ICO:PLAY_ICO;}
+}
+$('rfStart').addEventListener('click',function(){BR.running=false;if(RF.done)rfReset();if(!RF.started){RF.started=true;RF.running=true;}else RF.running=!RF.running;});
+$('rfReset').addEventListener('click',function(){rfReset();});
+var rfBad=new RibFig($('rfBad'),'bad'),rfGood=new RibFig($('rfGood'),'good'),rfBr=new RibFig($('rfBreath'),'breath'),RFIGS=[rfBad,rfGood,rfBr];
+if('IntersectionObserver' in window){
+  var io4=new IntersectionObserver(function(ents){ents.forEach(function(en){RFIGS.forEach(function(q){if(q.svg===en.target)q.visible=en.isIntersecting;});});},{rootMargin:'80px'});
+  RFIGS.forEach(function(q){io4.observe(q.svg);});
+}
+var rfGrid=$('rfGrid'),rfSeg=document.querySelectorAll('.rfseg button');
+rfSeg.forEach(function(bt){bt.addEventListener('click',function(){
+  var v=bt.getAttribute('data-v');if(rfGrid.getAttribute('data-show')===v)return;
+  rfGrid.setAttribute('data-show',v);
+  rfSeg.forEach(function(o){o.setAttribute('aria-pressed',o===bt?'true':'false');});
+  /* morph: the newly shown figure starts from the other state */
+  var fig=v==='bad'?rfBad:rfGood;if(!RM){fig.f=1-fig.ft;fig.lastF=-1;}
+});});
+function ribsFrame(rawDt,dt){
+  rfTick(rawDt);rfUI();
+  rfBad.visible&&rfBad.render(0,'idle',dt);rfGood.visible&&rfGood.render(0,'idle',dt);
+  if(rfBr.visible)rfBr.render(RF.b,RF.started&&!RF.done?RF.ph:'idle',dt);
+}
+window.__ribs={state:function(){return{ph:RF.ph,b:RF.b,t:RF.t,round:RF.round,running:RF.running,started:RF.started,done:RF.done,num:rfEls.num.textContent,cue:rfEls.cue.textContent,fBad:rfBad.f,fGood:rfGood.f};}};
+
+/* ---------- motion toggle / timers housekeeping / glossary ---------- */
+var motionBtn=$('motionBtn');
+function setRM(v){
+  RM=v;document.documentElement.classList.toggle('rm',v);
+  motionBtn.setAttribute('aria-pressed',v?'true':'false');
+  if(v){playing=false;playBtn();demoG.auto=false;demoC.auto=false;demoG.ab();demoC.ab();}
+  FIGS.forEach(function(f){f.dirty=true;});
+}
+motionBtn.addEventListener('click',function(){setRM(!RM);});
+if(rmq){var onRm=function(e){setRM(e.matches);};if(rmq.addEventListener)rmq.addEventListener('change',onRm);else if(rmq.addListener)rmq.addListener(onRm);}
+var onMqs=function(){FIGS.forEach(function(f){f.dirty=true;});};
+if(MQS.addEventListener)MQS.addEventListener('change',onMqs);else if(MQS.addListener)MQS.addListener(onMqs);
+setRM(RM);
+document.addEventListener('visibilitychange',function(){if(document.hidden){BR.running=false;RF.running=false;}});
+var wl=null,wlBusy=false,wlOff=false;
+function wakeSync(){
+  if(!navigator.wakeLock||wlOff)return;
+  var need=(BR.running||RF.running)&&!document.hidden;
+  if(need&&!wl&&!wlBusy){wlBusy=true;
+    navigator.wakeLock.request('screen').then(function(l){wlBusy=false;wl=l;l.addEventListener('release',function(){if(wl===l)wl=null;});}).catch(function(){wlBusy=false;wlOff=true;});
+  }else if(!need&&wl){var l2=wl;wl=null;l2.release().catch(function(){});}
+}
+(function(){
+  var keys=['ip','glute','es','mf','ta','dia','pf','rm','obl','ribs','rcage','lumbar','disc','facet','sacrum','pelvis','asis','psis','femur','scal','plane'];
+  var dl=$('glossList');
+  keys.forEach(function(k){var d=TIPS[k];if(!d)return;
+    var box=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');
+    dt.textContent=d[0];dd.textContent=d[1];box.appendChild(dt);box.appendChild(dd);dl.appendChild(box);});
+})();
+
+/* ---------- loop ---------- */
+var last=performance.now();
+function frame(ms){
+  var rawDt=Math.min(1,Math.max(0,(ms-last)/1000)),dt=Math.min(.05,rawDt);last=ms;NOW=ms/1000;
+  breathFrame(rawDt,dt);ribsFrame(rawDt,dt);
+  wakeSync();
+  if(playing&&figMain.visible){stepT+=dt;if(stepT>=STEP_DUR){if(step<STEPS.length-1)go(step+1);else{stepT=STEP_DUR;playing=false;playBtn();}}}
+  $('prog').style.width=(clamp(stepT/STEP_DUR,0,1)*100)+'%';
+  demoG.tick(dt);demoC.tick(dt);
+  FIGS.forEach(function(f){if(f.visible)f.tick(NOW);});
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+window.__bp={go:go,setPlaying:function(v){playing=v;started=true;playBtn();},demoG:demoG,demoC:demoC,figs:FIGS};
+})();
+</script>
+</body>
+</html>
